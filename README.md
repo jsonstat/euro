@@ -19,7 +19,6 @@ A design principle of the JSON-stat format is the strict separation of data and 
 * [Queries](#queries)
 * [Filters](#filters)
 * [Sample code](#sample-code)
-* [Resources](#resources)
 
 ## Queries
 
