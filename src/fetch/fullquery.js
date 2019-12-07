@@ -1,3 +1,5 @@
+/*jshint esversion: 6*/
+
 //Experimental (and basically useless as it is)
 
 import addParamQuery from "../query/addparam.js";

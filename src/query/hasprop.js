@@ -1,3 +1,5 @@
+/*jshint esversion: 6*/
+
 /**
  * Safely checks the existance of property f in object q
  * @param {Object} q Object

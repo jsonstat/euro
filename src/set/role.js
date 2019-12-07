@@ -1,3 +1,5 @@
+/*jshint esversion: 6*/
+
 /**
  * Adds role information to a Eurostat jsonstat dataset instance
  * by modifying it.

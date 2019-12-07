@@ -1,6 +1,6 @@
 {
 	"name": "jsonstat-euro",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A library to deal with Eurostat's JSON-stat API",
 	"homepage": "https://jsonstat.com",
 	"keywords": [
@@ -44,7 +44,9 @@
 		"@babel/preset-env": "^7.7.4"
 	},
 	"babel": {
-		"presets": ["@babel/preset-env"]
+		"presets": [
+			"@babel/preset-env"
+		]
 	},
 	"license": "Apache-2.0",
 	"files": [

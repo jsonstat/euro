@@ -1,5 +1,6 @@
-import {ELANG, EVERSION} from "../constants.js";
+/*jshint esversion: 6*/
 
+import {ELANG, EVERSION} from "../constants.js";
 
 /**
  * Converts a query into a Eurostat URL
@@ -22,12 +23,13 @@ export default function getURL(query){
 
     if(filter){
       Object.keys(filter).forEach(dim=>{
-        if(Array.isArray(dim)){
-          filter[dim].forEach(value=>{
+        const d=filter[dim];
+        if(Array.isArray(d)){
+          d.forEach(value=>{
             param.push(`${dim}=${value}`);
           });
         }else{ //Not an array? But it must be! Ok let's be tolerant
-          param.push(`${dim}=${filter[dim]}`);
+          param.push(`${dim}=${d}`);
         }
       });
       url+="?"+param.join("&");

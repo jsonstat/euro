@@ -1,3 +1,5 @@
+/*jshint esversion: 6*/
+
 import {ELANG, EVERSION} from "../constants.js";
 import lastPeriodQuery from "../query/lastperiod.js";
 import fetchDataset from "./dataset.js";

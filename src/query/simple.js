@@ -1,8 +1,10 @@
+/*jshint esversion: 6*/
+
 import {ELANG, EVERSION} from "../constants.js";
 import hasProp from "./hasprop.js";
 
 /**
- * Tries to tansforms a query into a new one that returns a single cell cube
+ * Tries to transform a query into a new one that returns a single cell cube
  * (single cell guaranteed if original query is a fully explicit one)
  * @param {Object} query Fully explicit query
  * @returns {Object} New query for the last period and the first category of each dimension

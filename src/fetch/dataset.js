@@ -1,3 +1,5 @@
+/*jshint esversion: 6*/
+
 import JSONstat from "jsonstat-toolkit";
 import getURL from "../get/url.js";
 import setRole from "../set/role.js";

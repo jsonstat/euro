@@ -1,3 +1,5 @@
+/*jshint esversion: 6*/
+
 import {ELANG, EVERSION} from "../constants.js";
 import hasProp from "./hasprop.js";
 

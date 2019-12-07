@@ -1,3 +1,5 @@
+/*jshint esversion: 6*/
+
 /**
  * Translates a Eurostat status id into a status label
  * @param {Object} ds jsonstat dataset instance
