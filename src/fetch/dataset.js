@@ -17,19 +17,27 @@ import setRole from "../set/role.js";
  */
 export default function fetchDataset(o){
   if(o){
-    return JSONstat( (typeof(o)==="string") ? o : getURL(o) )
+    return JSONstat( getURL(o) )
       .then(ds=>{
         if(ds.class==="dataset"){
           setRole(ds);
           return ds;
         }else{
-          return {
-            class: "error",
-            status: "422",
-            label: "Unprocessable Entity"
-          };
+          return ds;
         }
-      })
-    ;
+      },
+      e=>{
+        const
+          status=e.message.slice(0,3),
+          label=(status==="416") ? "Too many categories have been requested. Maximum is 50." : e.message.slice(4)
+        ;
+
+        return {
+          class: "error",
+          status,
+          label
+        };
+      }
+    );
   }
 }
