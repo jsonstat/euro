@@ -46,6 +46,7 @@ export default function getEmptyDataset(query){
     },
     ds=JSONstat(js)
   ;
+  
   setRole(ds);
   return ds;
 }

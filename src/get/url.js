@@ -4,7 +4,7 @@ import {ELANG, EVERSION} from "../constants.js";
 
 /**
  * Converts a query into a Eurostat URL
- * @param {string|Object} query Query
+ * @param {string|Object} query Query object, dataset ID or Eurostat API end point
  * @returns {string} Eurostat API end point
  */
 export default function getURL(query){

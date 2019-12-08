@@ -5,14 +5,9 @@ import getURL from "../get/url.js";
 import setRole from "../set/role.js";
 
 
-//You can specify a URL or dataset code, filter, lang, version:
-//required url or dataset
-//Gets an equery: returns a promise with a JSONstat ds object
-//Async promise
-
 /**
  * Fetches (async) a normalized Eurostat jsonstat dataset.
- * @param {string|Object} query A Eurostat API endpoint or a query
+ * @param {string|Object} query A Eurostat dataset ID, a Eurostat API endpoint or a query
  * @returns {Object} jsonstat dataset instance on success
  */
 export default function fetchDataset(o){

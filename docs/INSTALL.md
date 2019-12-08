@@ -10,18 +10,18 @@
 
 ```html
 <script src="https://unpkg.com/jsonstat-toolkit@1.0.8"></script>
-<script src="https://unpkg.com/jsonstat-euro@1.0.2"></script>
+<script src="https://unpkg.com/jsonstat-euro@1.0.3"></script>
 ```
 
 ```html
-<script src="https://cdn.jsdelivr.net/combine/npm/jsonstat-toolkit@1.0.8,npm/jsonstat-euro@1.0.2"></script>
+<script src="https://cdn.jsdelivr.net/combine/npm/jsonstat-toolkit@1.0.8,npm/jsonstat-euro@1.0.3"></script>
 ```
 
 The JSON-stat for Eurostat works on any modern browser. It also supports Internet Explorer 9 or higher as long as its connection capabilities (fetch* functions) are not used. To support its connection capabilities polyfills for [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) are required:
 
 ```html
 <script src="https://cdn.jsdelivr.net/combine/npm/es6-promise@4.2.8,npm/whatwg-fetch@3.0.0"></script>
-<script src="https://unpkg.com/jsonstat-euro@1.0.2"></script>
+<script src="https://unpkg.com/jsonstat-euro@1.0.3"></script>
 ```
 
 ### ECMAScript module
@@ -30,13 +30,13 @@ Very modern browsers support ECMAScript modules. Copy the latest version of the 
 
 ```html
 <script type="module">
-import * as JSONstatUtils from "https://cdn.jsdelivr.net/npm/jsonstat-euro@1.0.2/import.mjs";
+import * as JSONstatUtils from "https://cdn.jsdelivr.net/npm/jsonstat-euro@1.0.3/import.mjs";
 </script>
 ```
 
 ```html
 <script type="module">
-import * as JSONstatUtils from "https://unpkg.com/jsonstat-euro@1.0.2/import.mjs";
+import * as JSONstatUtils from "https://unpkg.com/jsonstat-euro@1.0.3/import.mjs";
 </script>
 ```
 
