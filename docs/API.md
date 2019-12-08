@@ -2,10 +2,10 @@
 
 > [JSON-stat for Eurostat v.1](https://github.com/jsonstat/euro/blob/master/README.md) ▸ **API Reference**
 
-* [Query functions](#queryfunctions)
-* [Fetch functions](#fetchfunctions)
-* [Get functions](#getfunctions)
-* [Set functions](#setfunctions)
+* [Query functions](#query-functions)
+* [Fetch functions](#fetch-functions)
+* [Get functions](#get-functions)
+* [Set functions](#set-functions)
 
 ## Query functions
 
