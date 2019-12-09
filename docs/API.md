@@ -1,6 +1,6 @@
 # API Reference
 
-> [JSON-stat for Eurostat v.1](https://github.com/jsonstat/euro/blob/master/README.md) ▸ **API Reference**
+> [JSON-stat for Eurostat](https://github.com/jsonstat/euro/blob/master/README.md) ▸ **API Reference**
 
 * [Fetch functions](#fetch-functions)
 * [Get functions](#get-functions)
