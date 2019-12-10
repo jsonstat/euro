@@ -7,6 +7,9 @@
 * [Query functions](#query-functions)
 * [Set functions](#set-functions)
 
+
+If you haven&rsquo;t read the [README](https://github.com/jsonstat/euro/blob/master/README.md), please do before reading the API reference.
+
 ## Fetch functions
 
 Fetch functions are asynchronous functions that connect to Eurostat and retrieve dataset information.
@@ -32,6 +35,8 @@ EuroJSONstat.fetchDataset(
 });
 ```
 
+(If you use a dataset ID as input, you won&rsquo;t be able to choose language or API version.)
+
 ### fetchQuery
 
 Gets a query or a dataset ID and returns a promise of an explicit version of the original query. By default, only the last time period is retrieved: a second parameter (*false*) can be provided to retrieve all the time periods available.
@@ -52,6 +57,8 @@ EuroJSONstat.fetchQuery(
   }
 });
 ```
+
+(If you use a dataset ID as input, you won&rsquo;t be able to choose language or API version.)
 
 ## Get functions
 
@@ -107,6 +114,8 @@ const
   url=EuroJSONstat.getURL(query)
 ;
 ```
+
+(If you use a dataset ID as input, you won&rsquo;t be able to choose language or API version.)
 
 ## Query functions
 
