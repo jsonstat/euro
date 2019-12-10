@@ -27,11 +27,9 @@ export {
   default as fetchQuery
 } from "./fetch/query.js";
 
-/* EXPERIMENTAL
 export {
   default as fetchFullQuery
 } from "./fetch/fullquery.js";
-*/
 
 export {
   default as fetchDataset

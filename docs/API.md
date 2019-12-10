@@ -10,13 +10,19 @@
 
 If you haven&rsquo;t read the [README](https://github.com/jsonstat/euro/blob/master/README.md), please do before reading the API reference.
 
+JSON-stat for Eurostat version is exposed as version.
+
+```js
+console.log(EuroJSONstat.version);
+```
+
 ## Fetch functions
 
 Fetch functions are asynchronous functions that connect to Eurostat and retrieve dataset information.
 
 ### fetchDataset
 
-Gets a query, a dataset ID or a Eurostat API end point and returns a promise of a jsonstat dataset instance.
+Takes a query, a dataset ID or a Eurostat API end point and returns a promise of a jsonstat dataset instance.
 
 ```js
 EuroJSONstat.fetchDataset(
@@ -39,7 +45,7 @@ EuroJSONstat.fetchDataset(
 
 ### fetchQuery
 
-Gets a query or a dataset ID and returns a promise of an explicit version of the original query. By default, only the last time period is retrieved: a second parameter (*false*) can be provided to retrieve all the time periods available.
+Takes a query or a dataset ID and returns a promise of an explicit version of the original query. By default, only the last time period is retrieved: a second parameter (*false*) can be provided to retrieve all the time periods available.
 
 ```js
 EuroJSONstat.fetchQuery(
@@ -62,7 +68,7 @@ EuroJSONstat.fetchQuery(
 
 ## Get functions
 
-Get functions are translation functions.
+Get functions are conversion functions.
 
 ### getEmptyDataset
 
@@ -256,4 +262,4 @@ EuroJSONstat.simpleQuery(
 
 ### setRole
 
-Gets a jsonstat dataset instance and adds role information to it. Generally, you won&rsquo;t need to use it: all jsonstat dataset instances returned by JSON-stat for Eurostat have already set role.
+Takes a jsonstat dataset instance and adds role information to it. Generally, you won&rsquo;t need to use it: all jsonstat dataset instances returned by JSON-stat for Eurostat have already set role.

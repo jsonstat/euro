@@ -1,38 +1,48 @@
 /*jshint esversion: 6*/
 
-//Experimental (and basically useless as it is)
-
 import addParamQuery from "../query/addparam.js";
 import removeParamQuery from "../query/removeparam.js";
 import simpleQuery from "../query/simple.js";
 import fetchQuery from "./query.js";
+import hasProp from "../query/hasprop.js";
 
 /**
  * Tries to convert (async) an unfiltered query into a fully explicit one
  * by fetching datasets
- * @param {Object} query Dataset code expressed as an unfiltered query
- * @param {Object} [geo] Geograhical category
+ * @param {Object|string} query Query or dataset ID
  * @returns {Object} a fully explicit query on success
  */
-export default function fetchFullQuery(query, geo){
- const filter=(typeof geo==="string") ?
-   addParamQuery(query, {geo: [geo]})
-   :
-   addParamQuery(query, {filterNonGeo: ["1"]})
- ;
+export default function fetchFullQuery(query){
+  if(typeof query==="string"){
+    query={ dataset: query };
+  }
 
- return fetchQuery( filter ).then(e=>{
-   if(e.class==="error"){
-     return e;
-   }
+  const filter=(hasProp(query, "filter")) ? query.filter : null;
 
-   return fetchQuery( removeParamQuery(simpleQuery(e), ["time", "geo"]) , false).then(
-     t=>{
-       if(t.class==="error"){
-         return t;
-       }
-       return addParamQuery(e,t,["time","geo"]);
-     }
-   );
- });
+  if(filter){
+    const
+      filterDimensions=Object.keys(filter),
+      filtered=addParamQuery(query, filter)
+    ;
+
+    return fetchQuery(filtered, false).then(ds=>{
+      if(ds.class==="error"){
+        return ds;
+      }
+
+      const
+        simple=simpleQuery(ds),
+        open=removeParamQuery(simple, filterDimensions)
+      ;
+
+      return fetchQuery(open, false).then(f=>{
+        if(f.class==="error"){
+          return f;
+        }
+        return addParamQuery(ds, f, filterDimensions);
+      });
+    });
+  }else{
+    return fetchQuery(query, false).then(ds=>ds);
+  }
 }
