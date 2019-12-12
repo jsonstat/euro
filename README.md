@@ -1,12 +1,14 @@
 # JSON-stat for Eurostat
 
-JSON-stat for Eurostat (**Euro**JSON**stat**, for short) is a JavaScript library to deal with Eurostat's [JSON-stat](https://json-stat.org/format/) API (requests and responses). **Euro**JSON**stat** is part of the [JSON-stat Toolkit](https://json-stat.com). It is meant to complement, not replace, Eurostat's own set of libraries ([eurostat.js](https://github.com/eurostat/eurostat.js)). While the latter addresses many issues, **Euro**JSON**stat** library is focused on JSON-stat-related ones.
+JSON-stat for Eurostat (**Euro**JSON**stat**, for short) is a JavaScript library to deal with Eurostat&rsquo;s [JSON-stat](https://json-stat.org/format/) API (requests and responses). **Euro**JSON**stat** is part of the [JSON-stat Toolkit](https://json-stat.com). It is meant to complement, not replace, Eurostat&rsquo;s own set of libraries ([eurostat.js](https://github.com/eurostat/eurostat.js)). While the latter addresses many issues, **Euro**JSON**stat** library is focused on JSON-stat-related ones.
 
 For instance, Eurostat does not include roles in its datasets. **Euro**JSON**stat** offers a method to retrieve role-enriched datasets (*fetchDataset*) or allows you to add role information to an already retrieved Eurostat dataset (*setRole*). This is possible because Eurostat uses standardized dimension names.
 
-JSON-stat does not provide a single way to describe status symbols. Instead, if offers the [extension](https://json-stat.org/format/#extension) property to allow providers to customize their JSON-stat responses to their needs. Eurostat uses a standardized way to attach a label to each status symbol. **Euro**JSON**stat** offers a method to retrieve such information (*getStatusLabel*).
+JSON-stat does not provide a single way to describe status symbols. Instead, it offers the [extension](https://json-stat.org/format/#extension) property to allow providers to customize their JSON-stat responses to their needs. Eurostat uses a standardized way to attach a label to each status symbol. **Euro**JSON**stat** offers a method to retrieve such information (*getStatusLabel*).
 
-A design principle of the JSON-stat format is the strict separation of data and metadata in order to allow the use of exactly the same structure for full (data and metadata) responses, data-only responses and metadata-only responses. Unfortunately, Eurostat does not support metadata-only responses (responses without *value* and *status*). **Euro**JSON**stat** offers a way to *try* to avoid this limitation (*fetchFullQuery*). **Euro**JSON**stat** currently includes a function to convert a full explicit query (see later) into a metadata-only dataset instance (*getEmptyDataset*).
+A design principle of the JSON-stat format is the strict separation of data and metadata in order to allow the use of exactly the same structure for full (data and metadata) responses, data-only responses and metadata-only responses. Unfortunately, Eurostat does not support metadata-only responses. **Euro**JSON**stat** offers a way to *try* to avoid this limitation (*fetchFullQuery*).
+
+Finally, **Euro**JSON**stat** includes a function to convert a fully explicit query (see later) into a metadata-only dataset instance (*getEmptyDataset*).
 
 ## Resources
 
@@ -64,7 +66,7 @@ EuroJSONstat.fetchQuery(iq, false).then(eq=>{
 });
 ```
 
-*fetchQuery* returns metadata-enriched queries:
+*fetchQuery* returns a metadata-enriched query:
 
 ```js
 {
@@ -99,11 +101,24 @@ EuroJSONstat.fetchQuery(iq, false).then(eq=>{
 }
 ```
 
-A **full explicit query** is a query that exposes all the dimensions and categories of a non-filtered dataset.
+A **fully explicit query** is a query that exposes all the dimensions and categories of a non-filtered dataset.
+
+```js
+EuroJSONstat.fetchFullQuery({
+  "dataset": "une_rt_a",
+  "lang": "fr"
+}).then(eq=>{
+  if(eq.class==="error"){
+    console.log(`Error ${eq.status} (${eq.label})`);
+  }else{
+    console.log(eq);
+  }
+});
+```
 
 ## Filters
 
-Another special kind of object are filters. The "filter" property of queries are filters. They are made of parameters (properties of the filter object), usually dimension names, and a list of valid values (array), usually category names. For example:
+Another special kind of object are filters. The "filter" property of queries is a filter. Filters are made of parameters (properties of the filter object), usually dimension names, and a list of valid values (array), usually category names. For example:
 
 ```js
 {
@@ -164,8 +179,21 @@ EuroJSONstat.fetchDataset(uquery).then(ds=>{
     //Eurostat status meaning is easily retrieved
     console.log(`Status symbol of first observation is "${status}" which means "${EuroJSONstat.getStatusLabel(ds, status)}".`);
 
-    //When standardized, Eurostat's datasets are enriched with roles
+    //When standardized, Eurostat&rsquo;s datasets are enriched with roles
     console.log(`Classification dimensions: ${ds.role.classification}`);    
+  }
+});
+
+//Get a fully explicit query from previous query
+//and convert it into a dataset instance
+EuroJSONstat.fetchFullQuery(uquery).then(fq=>{
+  if(fq.class==="query"){
+    //Convert the fully explicit query into a dataset instance
+    const ds=EuroJSONstat.getEmptyDataset(fq);
+    console.log(`"${ds.extension.datasetId}" dataset has label "${ds.label}".`);
+    console.log(`Classification dimensions: ${ds.role.classification}`);    
+    console.log(`Available time periods: ${ds.Dimension("time", false)}`);    
+    console.log(`Available geographical areas: ${ds.Dimension("geo", false)}`);    
   }
 });
 ```

@@ -2,6 +2,8 @@
 
 import JSONstat from "jsonstat-toolkit";
 import setRole from "../set/role.js";
+import {ELANG} from "../constants.js";
+import hasProp from "../query/hasprop.js";
 
 /**
  * Create an empty (valueless) jsonstat dataset instance
@@ -10,6 +12,12 @@ import setRole from "../set/role.js";
  */
 export default function getEmptyDataset(query){
   const
+    lang=(hasProp(query, "lang")) ? query.lang : ELANG,
+    datasetId=(hasProp(query, "dataset")) ? query.dataset : null, //emptyDataset accepts queries without dataset code
+    extension={
+      lang: lang.toUpperCase(), //Eurostat uses uppercase in extension lang
+      datasetId
+    },
     id=Object.keys(query.filter),
     size=id.map(i=>query.filter[i].length),
     dimension={}
@@ -39,6 +47,7 @@ export default function getEmptyDataset(query){
       class: "dataset",
       //href: getURL(query), Eurostat does not support valueless dataset requests
       label: query.label.dataset,
+      extension,
       id,
       size,
       dimension,
@@ -46,7 +55,7 @@ export default function getEmptyDataset(query){
     },
     ds=JSONstat(js)
   ;
-  
+
   setRole(ds);
   return ds;
 }

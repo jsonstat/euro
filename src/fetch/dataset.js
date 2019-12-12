@@ -22,9 +22,12 @@ export default function fetchDataset(o){
         }
       },
       e=>{
+        //Not elegant. Should be catched by JSONstat()
         const
-          status=e.message.slice(0,3),
-          label=(status==="416") ? "Too many categories have been requested. Maximum is 50." : e.message.slice(4)
+          code=e.message.slice(0,3),
+          status=( !isNaN(code) ) ? code : "418", //418 is used here to inform that error was not returned by the server but instead it was produced in the client's side
+          label=(status!=="418") ? e.message.slice(4) : e.message
+          //label=(status==="416") ? "Too many categories have been requested. Maximum is 50." : e.message.slice(4)
         ;
 
         return {

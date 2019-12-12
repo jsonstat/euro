@@ -8,7 +8,7 @@
 * [Set functions](#set-functions)
 
 
-If you haven&rsquo;t read the [README](https://github.com/jsonstat/euro/blob/master/README.md), please do before reading the API reference.
+If you haven&rsquo;t read the [README](https://github.com/jsonstat/euro/blob/master/README.md), please do so before reading the API reference.
 
 JSON-stat for Eurostat version is exposed as version.
 
@@ -18,11 +18,11 @@ console.log(EuroJSONstat.version);
 
 ## Fetch functions
 
-Fetch functions are asynchronous functions that connect to Eurostat and retrieve dataset information.
+Fetch functions are asynchronous functions that connect to Eurostat and retrieve dataset information. On error, the status code and message returned by the server are exposed in the reject function. If the error was produced on the client side, status code "418" is returned.
 
 ### fetchDataset
 
-Takes a query, a dataset ID or a Eurostat API end point and returns a promise of a jsonstat dataset instance.
+Takes a query, a dataset code or a Eurostat API end point and returns a promise of a jsonstat dataset instance.
 
 ```js
 EuroJSONstat.fetchDataset(
@@ -34,18 +34,18 @@ EuroJSONstat.fetchDataset(
   }
 ).then(ds=>{
   if(ds.class==="error"){
-    console.log("Error label: " + ds.label);
+    console.log(`Error label: "${ds.label}"`);
   }else{
-    console.log("Dataset label: " + ds.label);
+    console.log(`Dataset label: "${ds.label}"`);
   }
 });
 ```
 
-(If you use a dataset ID as input, you won&rsquo;t be able to choose language or API version.)
+(If you use a dataset code as input, you won&rsquo;t be able to choose language or API version.)
 
 ### fetchQuery
 
-Takes a query or a dataset ID and returns a promise of an explicit version of the original query. By default, only the last time period is retrieved: a second parameter (*false*) can be provided to retrieve all the time periods available.
+Takes a query or a dataset code and returns a promise of an explicit version of the original query. By default, only the last time period is retrieved: a second parameter (*false*) can be provided to retrieve all the time periods available.
 
 ```js
 EuroJSONstat.fetchQuery(
@@ -57,14 +57,71 @@ EuroJSONstat.fetchQuery(
   }
 ).then(q=>{
   if(q.class==="error"){
-    console.log("Error label: " + q.label);
+    console.log(`Error label: "${q.label}"`);
   }else{
     console.log(q);
   }
 });
 ```
 
-(If you use a dataset ID as input, you won&rsquo;t be able to choose language or API version.)
+(If you use a dataset code as input, you won&rsquo;t be able to choose language or API version.)
+
+### fetchFullQuery
+
+Tries to convert a query into a fully explicit one. It returns a promise.
+
+```js
+EuroJSONstat.fetchFullQuery({
+  "dataset": "une_rt_a"
+}).then(eq=>{
+  if(eq.class==="error"){
+    console.log(`Error ${eq.status} (${eq.label})`);
+  }else{
+    console.log(eq);
+  }
+});
+```
+
+Eurostat imposes a limitation on the number of categories (50) that can be retrieved in a single request. In this number, time and (usually) geo are not taken into account. To avoid this limitation, you may need to provide an initial valid filter for the dataset in the query. Including a filter in the query is the way to tell *fetchFullQuery* that the aforementioned limitation avoids retrieving directly the requested dataset information and to try an indirect way. The initial filter will be drop in the returned query: it just plays an ancillary role in a two-step process. When a filter is provided, *fetchFullQuery* will try to build a fully explicit query by retrieving two filtered datasets: the first one will include the provided filter; the second one will be a complementary dataset.
+
+```js
+EuroJSONstat.fetchFullQuery({
+  "dataset": "nama_10_gdp",
+  "label": { "dataset": "GDP and main components" },
+  "filter": {
+    "na_item": ["B1G"]
+  }
+}).then(eq=>{
+  if(eq.class==="error"){
+    console.log(`Error ${eq.status} (${eq.label})`);
+  }else{
+    console.log(eq);
+  }
+});
+```
+
+Take into account that not any valid filter will do the job: the filter may define a small enough filtered dataset but not a small enough complementary dataset.
+
+When *fetchFullQuery* is unable to build a fully explicit query due to Eurostat&rsquo;s request size limits, it returns a status code 416.
+
+Getting a fully explicit query is useful as an input for *getEmptyDataset*:
+
+```js
+EuroJSONstat.fetchFullQuery({
+  "dataset": "cens_01rhsize",
+  "filter": {
+    "age": ["TOTAL"],
+    "geo": ["CZ"]
+  }
+}).then(eq=>{
+  if(eq.class==="error"){
+    console.log(`Error ${eq.status} (${eq.label})`);
+  }else{
+    const ds=EuroJSONstat.getEmptyDataset(eq);
+    console.log(`Data available for ${ds.Dimension("geo").length} regions.`);
+  }
+});
+```
 
 ## Get functions
 
@@ -77,7 +134,7 @@ Creates an empty (metadata-only) jsonstat dataset instance from an explicit quer
 ```js
 EuroJSONstat.fetchQuery("une_rt_a").then(q=>{
   if(q.class==="error"){
-    console.log("Error label: " + q.label);
+    console.log(`Error label: "${q.label}"`);
   }else{
     const ds=EuroJSONstat.getEmptyDataset(q);
     console.log(ds);
@@ -90,21 +147,20 @@ EuroJSONstat.fetchQuery("une_rt_a").then(q=>{
 Translates a Eurostat status ID (in a jsonstat dataset instance) into a status label. It takes two parameters: a jsonstat dataset instance (object) and a status ID (string).
 
 ```js
-
 EuroJSONstat.fetchDataset("une_rt_a").then(
   ds=>{
     const
       statusId=ds.Data({geo: "AT", time: "1983", sex: "T", age: "TOTAL", unit: "PC_ACT"}).status,
       statusLabel=EuroJSONstat.getStatusLabel(ds,statusId)
     ;
-    console.log(statusId + " = " + statusLabel);
+    console.log(`"${statusId}" = "${statusLabel}"`);
   }
 );
 ```
 
 ### getURL
 
-Converts a query or a dataset ID into a Eurostat API end point.
+Converts a query or a dataset code into a Eurostat API end point.
 
 ```js
 const
@@ -121,7 +177,7 @@ const
 ;
 ```
 
-(If you use a dataset ID as input, you won&rsquo;t be able to choose language or API version.)
+(If you use a dataset code as input, you won&rsquo;t be able to choose language or API version.)
 
 ## Query functions
 
