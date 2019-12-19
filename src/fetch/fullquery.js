@@ -19,7 +19,7 @@ export default function fetchFullQuery(query){
 
   const filter=(hasProp(query, "filter")) ? query.filter : null;
 
-  if(filter){
+  if(filter && Object.keys(filter).length!==0){
     const
       filterDimensions=Object.keys(filter),
       filtered=addParamQuery(query, filter)

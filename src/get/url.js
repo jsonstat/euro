@@ -1,6 +1,6 @@
 /*jshint esversion: 6*/
 
-import {ELANG, EVERSION} from "../constants.js";
+import normalQuery from "../query/normal.js";
 
 /**
  * Converts a query into a Eurostat URL
@@ -24,26 +24,19 @@ export default function getURL(query){
   //object
   if(typeof query==="object" && query!==null && !Array.isArray(query)){
     if(query.dataset){
-      const
-        filter=query.filter || null,
-        lang=query.lang || ELANG,
-        version=query.version || EVERSION
-      ;
+      query=normalQuery(query);
+
       let
-        url=`${APIbase}v${version}/json/${lang}/${query.dataset}`,
+        url=`${APIbase}v${query.version}/json/${query.lang}/${query.dataset}`,
         param=[]
       ;
 
-      if(filter){
+      const filter=query.filter || null;
+      if(filter && Object.keys(filter).length!==0){
         Object.keys(filter).forEach(dim=>{
-          const d=filter[dim];
-          if(Array.isArray(d)){
-            d.forEach(value=>{
-              param.push(`${dim}=${value}`);
-            });
-          }else{ //Not an array? But it must be! Ok let's be tolerant
-            param.push(`${dim}=${d}`);
-          }
+          filter[dim].forEach(value=>{
+            param.push(`${dim}=${value}`);
+          });
         });
         url+="?"+param.join("&");
       }

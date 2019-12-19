@@ -1,6 +1,6 @@
 /*jshint esversion: 6*/
 
-import {ELANG, EVERSION} from "../constants.js";
+import normalQuery from "./normal.js";
 import hasProp from "./hasprop.js";
 
 /**
@@ -11,13 +11,10 @@ import hasProp from "./hasprop.js";
  * @returns {Object} Dummy query (no dataset) for transformation purposes
  */
 function querify(filter, lang, version){
-  return {
-    class: "query",
+  return normalQuery({
     dataset: null,
-    filter,
-    lang: lang || ELANG,
-    version: version || EVERSION
-  };
+    filter
+  });
 }
 
 /**
@@ -69,8 +66,5 @@ export default function addParamQuery(query, aquery, params){
     }
   });
 
-  q.class="query";
-  q.lang=query.lang ? query.lang : ELANG;
-  q.version=query.version ? query.version : EVERSION;
-  return q;
+  return normalQuery(q);
 }

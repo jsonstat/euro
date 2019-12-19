@@ -1,6 +1,6 @@
 /*jshint esversion: 6*/
 
-import {ELANG, EVERSION} from "../constants.js";
+import normalQuery from "./normal.js";
 import hasProp from "./hasprop.js";
 
 /**
@@ -31,8 +31,5 @@ export default function simpleQuery(query, time){
     }
   }
 
-  q.class="query";
-  q.lang=query.lang ? query.lang : ELANG;
-  q.version=query.version ? query.version : EVERSION;
-  return q;
+  return normalQuery(q);
 }
