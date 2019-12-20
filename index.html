@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eurostat Datasets Browser</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/combine/npm/es6-promise@4.2.8,npm/whatwg-fetch@3.0.0,npm/jsonstat-toolkit@1.0.8,npm/jsonstat-euro@1.0.6,npm/jsonstat-suite@3.0.3"></script>
+</head>
+<body>
+  <main>
+    <ul id="languages">
+      <li><label><input type="radio" name="lang" value="en" checked> English</label></li>
+      <li><label><input type="radio" name="lang" value="fr"> Français</label></li>
+      <li><label><input type="radio" name="lang" value="de"> Deutsch</label></li>
+    </ul>
+    <div id="datasets"></div>
+    <div id="dimensions"></div>
+    <div id="data"></div>
+  </main>
+<script>
+var queries=[
+  {
+    dataset: "isoc_ci_it_h",
+    label: { dataset: "Households - type of connection to the internet" },
+    filter: {
+      indic_is: ["H_BBFIX"]
+    }
+  },
+  {
+    dataset: "ei_cphi_m",
+    label: { dataset: "Harmonised consumer price indices - monthly data" },
+    filter: {
+      indic: ["CP-HI00"]
+    }
+  },
+  {
+    dataset: "une_rt_a",
+    label: { dataset: "Unemployment by sex and age - annual average" },
+  },
+  {
+    dataset: "cens_01rhsize",
+    label: { dataset: "Population by sex, age group, size of household and NUTS 3 regions" },
+    filter: {
+      age: ["TOTAL"],
+      geo: ["CZ"]
+    }
+  },
+  {
+    dataset: "ei_bsfs_q",
+    label: { dataset: "Financial services - quarterly data" },
+    filter: {
+      "nace_r2": ["K"]
+    }
+  },
+  {
+    dataset: "ilc_lvho01",
+    label: { dataset: "Distribution of population by degree of urbanisation, dwelling type and income group" },
+    filter: {
+      building: "FLAT"
+    }
+  },
+  {
+    dataset: "ei_hppi_q",
+    label: { dataset: "House price index" },
+  },
+  {
+    dataset: "nama_10_gdp",
+    label: { dataset: "GDP and main components" },
+    filter: {
+      na_item: ["B1G"]
+    }
+  },
+  {
+    dataset: "ei_lmhr_m",
+    label: { dataset: "Harmonised unemployment rates" }
+  }
+];
+</script>
+<script src="index.js"></script>
+</script>
+</body>
+</html>
