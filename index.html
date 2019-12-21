@@ -23,13 +23,86 @@
   </main>
 <script>
 var queries=[
+  /*
   {
-    dataset: "isoc_ci_it_h",
-    label: { dataset: "Households - type of connection to the internet" },
+    dataset: "tps00001",
+    label: { dataset: "Population on 1 January" }
+  },
+  */
+  {
+    dataset: "demo_r_d2jan",
+    label: { dataset: "Population on 1 January by age, sex and NUTS 2 region" },
     filter: {
-      indic_is: ["H_BBFIX"]
+      age: ["TOTAL"]
     }
   },
+  /*
+  {
+    dataset: "tps00176",
+    label: { dataset: "Immigration" }
+  },
+  */
+  {
+    dataset: "migr_imm3ctb",
+    label: { dataset: "Immigration by age group, sex and country of birth" },
+    filter: {
+      c_birth: ["AD"],
+      age: ["TOTAL"]
+    }
+  },
+  /*
+  {
+    dataset: "t2020_50",
+    label: { dataset: "People at risk of poverty or social exclusion" }
+  },
+  */
+  {
+    dataset: "hlth_dpe020",
+    label: { dataset: "People at risk of poverty by level of activity limitation, sex and age" },
+    filter: {
+      age: ["Y_GE16"]
+    }
+  },
+  /*
+  {
+    dataset: "teilm020",
+    label: { dataset: "Harmonised unemployment rate by sex" }
+  },
+    {
+    dataset: "ei_lmhr_m",
+    label: { dataset: "Harmonised unemployment rates" }
+  },
+  */
+  {
+    dataset: "une_rt_q",
+    label: { dataset: "Unemployment by sex and age - quarterly average" },
+    filter: {
+      age: ["TOTAL"]
+    }
+  },
+  /*
+  {
+    dataset: "t2020_10",
+    label: { dataset: "Employment rate by sex, age group 20-64" }
+  },
+  */
+  {
+    dataset: "lfsi_emp_q",
+    label: { dataset: "Employment and activity by sex and age - quarterly data" },
+    filter: {
+      age: ["Y15-64"]
+    }
+  },
+  {
+    dataset: "tps00155",
+    label: { dataset: "Minimum wages" }
+  },
+  /*
+  {
+    dataset: "tec00118",
+    label: { dataset: "HICP - inflation rate" }
+  },
+  */
   {
     dataset: "ei_cphi_m",
     label: { dataset: "Harmonised consumer price indices - monthly data" },
@@ -38,15 +111,36 @@ var queries=[
     }
   },
   {
-    dataset: "une_rt_a",
-    label: { dataset: "Unemployment by sex and age - annual average" },
+    dataset: "ten00117",
+    label: { dataset: "Electricity prices by type of user" }
   },
   {
-    dataset: "cens_01rhsize",
-    label: { dataset: "Population by sex, age group, size of household and NUTS 3 regions" },
+    dataset: "teina225",
+    label: { dataset: "General government gross debt - annual data" }
+  },
+  /*
+  {
+    dataset: "tec00114",
+    label: { dataset: "GDP per capita in PPS" }
+  },
+  */
+  {
+    dataset: "nama_10_gdp",
+    label: { dataset: "GDP and main components" },
     filter: {
-      age: ["TOTAL"],
-      geo: ["CZ"]
+      na_item: ["B1G"]
+    }
+  },
+
+  {
+    dataset: "ei_hppi_q",
+    label: { dataset: "House price index" },
+  },
+  {
+    dataset: "isoc_ci_it_h",
+    label: { dataset: "Households - type of connection to the internet" },
+    filter: {
+      indic_is: ["H_BBFIX"]
     }
   },
   {
@@ -57,26 +151,19 @@ var queries=[
     }
   },
   {
+    dataset: "cens_01rhsize",
+    label: { dataset: "Population by sex, age group, size of household and NUTS 3 regions" },
+    filter: {
+      age: ["TOTAL"],
+      geo: ["CZ"]
+    }
+  },
+  {
     dataset: "ilc_lvho01",
     label: { dataset: "Distribution of population by degree of urbanisation, dwelling type and income group" },
     filter: {
       building: "FLAT"
     }
-  },
-  {
-    dataset: "ei_hppi_q",
-    label: { dataset: "House price index" },
-  },
-  {
-    dataset: "nama_10_gdp",
-    label: { dataset: "GDP and main components" },
-    filter: {
-      na_item: ["B1G"]
-    }
-  },
-  {
-    dataset: "ei_lmhr_m",
-    label: { dataset: "Harmonised unemployment rates" }
   }
 ];
 </script>
