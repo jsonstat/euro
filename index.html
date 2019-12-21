@@ -24,17 +24,17 @@
 <script>
 var queries=[
   {
-    dataset: "demo_r_d2jan",
-    label: { dataset: "Population on 1 January by age, sex and NUTS 2 region" },
+    dataset: "demo_r_pjangroup",
+    label: { dataset: "Population on 1 January by age group, sex and NUTS 2 region" },
     filter: {
       age: ["TOTAL"]
     }
   },
   {
-    dataset: "migr_imm3ctb",
-    label: { dataset: "Immigration by age group, sex and country of birth" },
+    dataset: "migr_imm10ctb",
+    label: { dataset: "Immigration by age group, sex and level of human development of the country of birth" },
     filter: {
-      c_birth: ["AD"],
+      agedef: ["COMPLET"],
       age: ["TOTAL"]
     }
   },
