@@ -74,7 +74,6 @@ function dimensions(ds, query){
       );
     }
 
-    //TODO: support lastPeriod?
     dim.id.forEach(function(c,i,a){
       var checkbox="";
 
