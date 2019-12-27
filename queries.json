@@ -105,6 +105,10 @@
     "dataset": "nama_10r_2gvagr",
     "label": { "dataset": "Real growth rate of regional gross value added (GVA) at basic prices by NUTS 2 regions - percentage change on previous year" }
   },
+  {
+    "dataset": "med_en1",
+    "label": { "dataset": "GHG (Green House Gases) emissions" }
+  },
 
 
   {
