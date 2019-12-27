@@ -4,12 +4,15 @@ var
   dataElement=document.querySelector("#data")
 ;
 
-datasetsElement.innerHTML=datasets(queries);
+fetch("queries.json").then(function(res){
+  var queries=res.json();
+  datasetsElement.innerHTML=datasets(queries);
 
-document.querySelector("select").addEventListener("change", function(event){
-  getMeta(
-    event.target.value==="" ? null : queries[event.target.value]
-  );
+  document.querySelector("select").addEventListener("change", function(event){
+    getMeta(
+      event.target.value==="" ? null : queries[event.target.value]
+    );
+  });
 });
 
 /**********************************************************************/

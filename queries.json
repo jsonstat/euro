@@ -1,0 +1,144 @@
+[
+  {
+    "dataset": "demo_r_pjangroup",
+    "label": { "dataset": "Population on 1 January by age group, sex and NUTS 2 region" },
+    "filter": {
+      "age": ["TOTAL"]
+    }
+  },
+  {
+    "dataset": "migr_imm10ctb",
+    "label": { "dataset": "Immigration by age group, sex and level of human development of the country of birth" },
+    "filter": {
+      "agedef": ["COMPLET"],
+      "age": ["TOTAL"]
+    }
+  },
+  {
+    "dataset": "hlth_dpe010",
+    "label": { "dataset": "People at risk of poverty or social exclusion by level of activity limitation, sex and age" },
+    "filter": {
+      "age": ["Y_GE16"]
+    }
+  },
+  {
+    "dataset": "une_rt_q",
+    "label": { "dataset": "Unemployment by sex and age - quarterly average" },
+    "filter": {
+      "age": ["TOTAL"]
+    }
+  },
+  {
+    "dataset": "lfsi_emp_q",
+    "label": { "dataset": "Employment and activity by sex and age - quarterly data" },
+    "filter": {
+      "age": ["Y15-64"]
+    }
+  },
+  {
+    "dataset": "tps00155",
+    "label": { "dataset": "Minimum wages" }
+  },
+  {
+    "dataset": "ei_cphi_m",
+    "label": { "dataset": "Harmonised consumer price indices - monthly data" },
+    "filter": {
+      "indic": ["CP-HI00"]
+    }
+  },
+  {
+    "dataset": "ei_bsco_m",
+    "label": { "dataset": "Consumers - monthly data" }
+  },
+  {
+    "dataset": "ei_bsin_m_r2",
+    "label": { "dataset": "Industry - monthly data" }
+  },
+
+
+
+
+
+  {
+    "dataset": "ten00117",
+    "label": { "dataset": "Electricity prices by type of user" }
+  },
+  {
+    "dataset": "teina225",
+    "label": { "dataset": "General government gross debt - annual data" }
+  },
+  {
+    "dataset": "nama_10_gdp",
+    "label": { "dataset": "GDP and main components" },
+    "filter": {
+      "na_item": ["B1G"]
+    }
+  },
+
+  {
+    "dataset": "ei_hppi_q",
+    "label": { "dataset": "House price index" },
+  },
+  {
+    "dataset": "isoc_ci_it_h",
+    "label": { "dataset": "Households - type of connection to the internet" },
+    "filter": {
+      "indic_is": ["H_BBFIX"]
+    }
+  },
+  {
+    "dataset": "ei_bsfs_q",
+    "label": { "dataset": "Financial services - quarterly data" },
+    "filter": {
+      "nace_r2": ["K"]
+    }
+  },
+  {
+    "dataset": "cens_01rhsize",
+    "label": { "dataset": "Population by sex, age group, size of household and NUTS 3 regions" },
+    "filter": {
+      "age": ["TOTAL"],
+      "geo": ["CZ"]
+    }
+  },
+  {
+    "dataset": "ilc_lvho01",
+    "label": { "dataset": "Distribution of population by degree of urbanisation, dwelling type and income group" },
+    "filter": {
+      "building": "FLAT"
+    }
+  },
+
+  {
+    "dataset": "tps00001",
+    "label": { "dataset": "Population on 1 January" }
+  },
+  {
+    "dataset": "tps00176",
+    "label": { "dataset": "Immigration" }
+  },
+  {
+    "dataset": "t2020_50",
+    "label": { "dataset": "People at risk of poverty or social exclusion" }
+  },
+  {
+    "dataset": "teilm020",
+    "label": { "dataset": "Harmonised unemployment rate by sex" }
+  },
+  {
+    "dataset": "ei_lmhr_m",
+    "label": { "dataset": "Harmonised unemployment rates" }
+  },
+  {
+    "dataset": "t2020_10",
+    "label": { "dataset": "Employment rate by sex, age group 20-64" }
+  },
+  {
+    "dataset": "tec00118",
+    "label": { "dataset": "HICP - inflation rate" }
+  },
+  {
+    "dataset": "tec00114",
+    "label": { "dataset": "GDP per capita in PPS" }
+  }
+]
