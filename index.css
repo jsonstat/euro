@@ -34,7 +34,7 @@ summary {
   background-color: #ccc;
   border-bottom: 1px solid #fff;
 }
-summary:hover {
+summary:hover, summary:focus {
   color: #c00;
 }
 label {
@@ -128,7 +128,7 @@ input[type="radio"] {
   background-color: #ccc;
   padding: 6px;
 }
-#data tbody tr:hover td {
+#data tbody tr: td {
   background-color: #ddd;
 }
 #data th.number, #data td.number {
