@@ -121,7 +121,13 @@
       "age": ["Y_GE16"]
     }
   },
-
+  {
+    "dataset": "ilc_mddd11",
+    "label": { "dataset": "Severe material deprivation rate by age and sex" },
+    "filter": {
+      "age": ["TOTAL"]
+    }
+  },
 
   {
     "dataset": "ten00117",
