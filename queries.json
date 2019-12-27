@@ -93,6 +93,18 @@
     "dataset": "demo_r_d3dens",
     "label": { "dataset": "Population density by NUTS 3 region" }
   },
+  {
+    "dataset": "demo_r_find3",
+    "label": { "dataset": "Fertility indicators by NUTS 3 region" }
+  },
+  {
+    "dataset": "demo_r_minfind",
+    "label": { "dataset": "Infant mortality rates by NUTS 2 region" }
+  },
+  {
+    "dataset": "nama_10r_2gvagr",
+    "label": { "dataset": "Real growth rate of regional gross value added (GVA) at basic prices by NUTS 2 regions - percentage change on previous year" }
+  },
 
 
   {
