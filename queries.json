@@ -90,12 +90,8 @@
     "label": { "dataset": "Interest rates - monthly data" }
   },
   {
-    "dataset": "demo_r_d2jan",
-    "label": { "dataset": "Population on 1 January by age, sex and NUTS 2 region" },
-    "filter": {
-      "sex": ["T"],
-      "age": ["TOTAL"]
-    }
+    "dataset": "demo_r_d3dens",
+    "label": { "dataset": "Population density by NUTS 3 region" }
   },
 
 
