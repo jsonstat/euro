@@ -106,8 +106,20 @@
     "label": { "dataset": "Real growth rate of regional gross value added (GVA) at basic prices by NUTS 2 regions - percentage change on previous year" }
   },
   {
-    "dataset": "med_en1",
-    "label": { "dataset": "GHG (Green House Gases) emissions" }
+    "dataset": "sdg_13_10",
+    "label": { "dataset": "Greenhouse gas emissions (source: EEA)" }
+  },
+  {
+    "dataset": "earn_gr_gpgr2",
+    "label": { "dataset": "Gender pay gap in unadjusted form by NACE Rev. 2 activity - structure of earnings survey methodology" }
+  },
+  {
+    "dataset": "ilc_pw01",
+    "label": { "dataset": "Average rating of satisfaction by domain, sex, age and educational attainment level" },
+    "filter": {
+      "sex": ["T"],
+      "age": ["Y_GE16"]
+    }
   },
 
 
