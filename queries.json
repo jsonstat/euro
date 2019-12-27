@@ -91,7 +91,7 @@
   },
   {
     "dataset": "demo_r_d2jan",
-    "label": { "dataset": "Households - type of connection to the internet" },
+    "label": { "dataset": "Population on 1 January by age, sex and NUTS 2 region" },
     "filter": {
       "sex": ["T"],
       "age": ["TOTAL"]
