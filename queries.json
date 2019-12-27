@@ -76,7 +76,7 @@
   },
   {
     "dataset": "ei_bsfs_m",
-    "label": { "dataset": "Financial services" }
+    "label": { "dataset": "Financial services - monthly data" }
   },
   {
     "dataset": "ei_eteu28_m",
@@ -85,6 +85,19 @@
       "unit": ["IVOL-NSA"]
     }
   },
+  {
+    "dataset": "ei_mfir_m",
+    "label": { "dataset": "Interest rates - monthly data" }
+  },
+  {
+    "dataset": "demo_r_d2jan",
+    "label": { "dataset": "Households - type of connection to the internet" },
+    "filter": {
+      "sex": ["T"],
+      "age": ["TOTAL"]
+    }
+  },
+
 
   {
     "dataset": "ten00117",
