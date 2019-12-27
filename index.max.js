@@ -4,8 +4,13 @@ var
   dataElement=document.querySelector("#data")
 ;
 
-fetch("queries.json").then(function(res){
-  var queries=res.json();
+fetch("queries.json").then(function(resp){
+  resp.json().then(main);
+});
+
+/**********************************************************************/
+
+function main(queries){
   datasetsElement.innerHTML=datasets(queries);
 
   document.querySelector("select").addEventListener("change", function(event){
@@ -13,10 +18,7 @@ fetch("queries.json").then(function(res){
       event.target.value==="" ? null : queries[event.target.value]
     );
   });
-});
-
-/**********************************************************************/
-
+}
 
 function datasets(qa){
   var select=[];
