@@ -4,11 +4,8 @@ var
   dataElement=document.querySelector("#data")
 ;
 
-fetch("queries.json")
-  .then(function(resp){
-    resp.json();
-  })
-  .then(function(queries){
+fetch("https://jsonstat.github.io/euro/queries.json").then(function(resp){
+  resp.json().then(function(queries){
     datasetsElement.innerHTML=datasets(queries);
 
     document.querySelector("select").addEventListener("change", function(event){
@@ -16,8 +13,8 @@ fetch("queries.json")
         event.target.value==="" ? null : queries[event.target.value]
       );
     });
-  })
-;
+  });
+});
 
 /**********************************************************************/
 
