@@ -54,10 +54,37 @@
     "dataset": "ei_bsin_m_r2",
     "label": { "dataset": "Industry - monthly data" }
   },
-
-
-
-
+  {
+    "dataset": "ei_bsbu_m_r2",
+    "label": { "dataset": "Construction - monthly data" }
+  },
+  {
+    "dataset": "ei_bsrt_m_r2",
+    "label": { "dataset": "Retail sale - monthly data" }
+  },
+  {
+    "dataset": "ei_bssi_m_r2",
+    "label": { "dataset": "Sentiment indicators - monthly data" }
+  },
+  {
+    "dataset": "ei_bsse_m_r2",
+    "label": { "dataset": "Services - monthly data" }
+  },
+  {
+    "dataset": "ei_bsci_m_r2",
+    "label": { "dataset": "Euro-zone Business Climate Indicator - monthly data" }
+  },
+  {
+    "dataset": "ei_bsfs_m",
+    "label": { "dataset": "Financial services" }
+  },
+  {
+    "dataset": "ei_eteu28_m",
+    "label": { "dataset": "EU28 international trade - monthly data" },
+    "filter": {
+      "unit": ["IVOL-NSA"]
+    }
+  },
 
   {
     "dataset": "ten00117",
