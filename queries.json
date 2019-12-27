@@ -77,7 +77,7 @@
 
   {
     "dataset": "ei_hppi_q",
-    "label": { "dataset": "House price index" },
+    "label": { "dataset": "House price index" }
   },
   {
     "dataset": "isoc_ci_it_h",
