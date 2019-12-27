@@ -114,14 +114,19 @@ input[type="radio"] {
 
 #data th, #data td {
   text-align: left;
-  padding: 6px;
 }
 #data td {
   background-color: #eee;
   font-size: 80%;
+  padding: 4px 6px;
+}
+#data td.value {
+  font-weight: bold;
+  font-size: 105%;
 }
 #data th {
   background-color: #ccc;
+  padding: 6px;
 }
 #data tbody tr:hover td {
   background-color: #ddd;
