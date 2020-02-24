@@ -82,7 +82,7 @@
     "dataset": "ei_eteu28_m",
     "label": { "dataset": "EU28 international trade - monthly data" },
     "filter": {
-      "unit": ["IVOL-NSA"]
+      "bclas_bec": ["TOTAL"]
     }
   },
   {
