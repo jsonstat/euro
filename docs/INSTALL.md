@@ -29,13 +29,13 @@ Very modern browsers support ECMAScript modules. Copy the latest version of the 
 
 ```html
 <script type="module">
-import * as JSONstatUtils from "https://cdn.jsdelivr.net/npm/jsonstat-euro@1.0.6/import.mjs";
+import * as EuroJSONstat from "https://cdn.jsdelivr.net/npm/jsonstat-euro@1.0.6/import.mjs";
 </script>
 ```
 
 ```html
 <script type="module">
-import * as JSONstatUtils from "https://unpkg.com/jsonstat-euro@1.0.6/import.mjs";
+import * as EuroJSONstat from "https://unpkg.com/jsonstat-euro@1.0.6/import.mjs";
 </script>
 ```
 
