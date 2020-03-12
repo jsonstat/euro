@@ -10,4 +10,6 @@
 
 [GDP per capita in Europe](https://bl.ocks.org/badosa/a5f33fdf0509ad850fa915c586ea8780) (ECMAscript module example)
 
+[Several Indicators Trend Comparison](https://bl.ocks.org/badosa/d0a635ab4ee7e8b002c065d604186882) (ECMAscript module example)
+
 [Eurostat Datasets Browser](https://jsonstat.github.io/euro/) (see [code](https://github.com/jsonstat/euro/blob/gh-pages/index.max.js)) (IIFE example)
