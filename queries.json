@@ -25,7 +25,7 @@
     "dataset": "une_rt_q",
     "label": { "dataset": "Unemployment by sex and age - quarterly average" },
     "filter": {
-      "age": ["TOTAL"]
+      "age": ["Y15-74"]
     }
   },
   {
