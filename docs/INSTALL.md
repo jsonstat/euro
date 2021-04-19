@@ -64,6 +64,6 @@ import * as EuroJSONstat from "jsonstat-euro";
 The safest way to load the jsonstat-euro in [Observable](https://observablehq.com/) is:
 
 ```js
-EuroJSONstat = import('jsonstat-euro@1.0.6/import.mjs')
+EuroJSONstat = import('jsonstat-euro@1.0.6/import.mjs');
 ```
 
