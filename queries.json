@@ -1105,23 +1105,6 @@
   },
   {
       "label": {
-          "dataset": "Employment and activity by sex and age - quarterly data"
-      },
-      "dataset": "lfsi_emp_q",
-      "filter": {
-          "s_adj": [
-              "SA"
-          ],
-          "age": [
-              "Y15-24",
-              "Y15-64",
-              "Y25-54",
-              "Y55-64"
-          ]
-      }
-  },
-  {
-      "label": {
           "dataset": "Labour market slack by sex and age - quarterly data"
       },
       "dataset": "lfsi_sla_q",
