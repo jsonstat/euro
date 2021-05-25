@@ -216,5 +216,1346 @@
     "label": { "dataset": "Population on 1 January by age groups and sex - cities and greater cities" }
   },
 
-  {"label":{"dataset":"Production in construction - monthly data"},"dataset":"sts_copr_m"},{"label":{"dataset":"HICP (2015 = 100) - monthly data (annual rate of change)"},"dataset":"prc_hicp_manr"},{"label":{"dataset":"GDP and main components (output, expenditure and income)"},"dataset":"namq_10_gdp"},{"label":{"dataset":"Employment by NACE Rev.2 - percentage change Q/Q-1"},"dataset":"tec00108"},{"label":{"dataset":"Employment by NACE Rev.2 - thousand persons"},"dataset":"tec00109"},{"label":{"dataset":"Employment by NACE Rev.2 - percentage change Q/Q-4, NSA"},"dataset":"teina305"},{"label":{"dataset":"Deaths by week and sex"},"dataset":"demo_r_mwk_ts"},{"label":{"dataset":"Production in industry - monthly data"},"dataset":"sts_inpr_m"},{"label":{"dataset":"GDP and main aggregates - selected international quarterly data (Percentage change compared to same period in previous year)"},"dataset":"naidq_10_gdp"},{"label":{"dataset":"GDP and main aggregates - selected international quarterly data (Percentage change on previous period)"},"dataset":"naidq_10_gdp"},{"label":{"dataset":"GDP and main aggregates - selected international quarterly data (Current prices, million units of national currency)"},"dataset":"naidq_10_gdp"},{"label":{"dataset":"Producer prices in industry, domestic market - monthly data"},"dataset":"sts_inppd_m"},{"label":{"dataset":"Turnover and volume of sales in wholesale and retail trade - monthly data"},"dataset":"sts_trtu_m"},{"label":{"dataset":"Gross domestic product (GDP) at current market prices by NUTS 2 regions"},"dataset":"nama_10r_2gdp"},{"label":{"dataset":"Fertility indicators"},"dataset":"demo_find"},{"label":{"dataset":"Balance of payments by country - quarterly data (BPM6)"},"dataset":"bop_c6_q"},{"label":{"dataset":"Causes of death - deaths by country of residence and occurrence"},"dataset":"hlth_cd_aro"},{"label":{"dataset":"Air passenger transport by reporting country"},"dataset":"avia_paoc"},{"label":{"dataset":"Mean and median income by age and sex - EU-SILC and ECHP surveys"},"dataset":"ilc_di03"},{"label":{"dataset":"At-risk-of-poverty thresholds - EU-SILC and ECHP surveys"},"dataset":"ilc_li01"},{"label":{"dataset":"At-risk-of-poverty rate by poverty threshold, age and sex - EU-SILC and ECHP surveys"},"dataset":"ilc_li02"},{"label":{"dataset":"People living in households with very low work intensity by age and sex (population aged 0 to 59 years)"},"dataset":"ilc_lvhl11"},{"label":{"dataset":"Severe material deprivation rate by age and sex"},"dataset":"ilc_mddd11"},{"label":{"dataset":"People at risk of poverty or social exclusion by age and sex"},"dataset":"ilc_peps01"},{"label":{"dataset":"Unemployment by sex and age – monthly data"},"dataset":"une_rt_m"},{"label":{"dataset":"Activities via internet not done because of security concerns"},"dataset":"isoc_cisci_ax"},{"label":{"dataset":"Security related problems experienced when using the internet"},"dataset":"isoc_cisci_pb"},{"label":{"dataset":"Individuals who ordered goods or services over the internet for private use"},"dataset":"isoc_r_blt12_i"},{"label":{"dataset":"Key indicators"},"dataset":"nasq_10_ki"},{"label":{"dataset":"Employment (thousand persons) by NUTS 3 regions"},"dataset":"nama_10r_3empers"},{"label":{"dataset":"Live births by mother's age and birth order"},"dataset":"demo_fordagec"},{"label":{"dataset":"Population change - Demographic balance and crude rates at national level"},"dataset":"demo_gind"},{"label":{"dataset":"Extra-EU trade by Member State, shares by invoicing currency"},"dataset":"ext_lt_invcur"},{"label":{"dataset":"Long-term unemployment (12 months and more) by sex, age, educational attainment level and NUTS 2 regions (%)"},"dataset":"lfst_r_lfu2ltu"},{"label":{"dataset":"Unemployment rates by sex, age, educational attainment level and NUTS 2 regions (%)"},"dataset":"lfst_r_lfu3rt"},{"label":{"dataset":"International trade in services (since 2010) (BPM6)"},"dataset":"bop_its6_det"},{"label":{"dataset":"Quarterly government debt"},"dataset":"gov_10q_ggdebt"},{"label":{"dataset":"Gas prices for household consumers - bi-annual data (from 2007 onwards)"},"dataset":"nrg_pc_202"},{"label":{"dataset":"Main national accounts tax aggregates"},"dataset":"gov_10a_taxag"},{"label":{"dataset":"Government deficit/surplus, debt and associated data"},"dataset":"gov_10dd_edpt1"},{"label":{"dataset":"Asylum applicants considered to be unaccompanied minors by citizenship, age and sex - annual data (rounded)"},"dataset":"migr_asyunaa"},{"label":{"dataset":"Nights spent at tourist accommodation establishments - monthly data"},"dataset":"tour_occ_nim"},{"label":{"dataset":"Population by educational attainment level, sex and age (%) - main indicators"},"dataset":"edat_lfse_03"},{"label":{"dataset":"Labour cost levels by NACE Rev. 2 activity"},"dataset":"lc_lci_lev"},{"label":{"dataset":"Labour cost index by NACE Rev. 2 activity - nominal value, quarterly data"},"dataset":"lc_lci_r2_q"},{"label":{"dataset":"Number of trips"},"dataset":"tour_dem_tttot"},{"label":{"dataset":"Number of trips by mode of transport"},"dataset":"tour_dem_tttr"},{"label":{"dataset":"Employees by sex, age and occupation (1 000)"},"dataset":"lfsa_eegais"},{"label":{"dataset":"Final decisions in appeal or review on applications by citizenship, age and sex - annual data (rounded)"},"dataset":"migr_asydcfina"},{"label":{"dataset":"Member States (EU28) trade by BEC product group since 1999"},"dataset":"ext_st_28msbec"},{"label":{"dataset":"Electricity prices for household consumers - bi-annual data (from 2007 onwards)"},"dataset":"nrg_pc_204"},{"label":{"dataset":"Absence from work by main reason, sex and age group - quarterly data"},"dataset":"lfsi_abs_q"},{"label":{"dataset":"Index of total actual hours worked in the main job by sex and age group (2006 = 100) - quarterly data"},"dataset":"lfsi_ahw_q"},{"label":{"dataset":"Employment and activity by sex and age - annual data"},"dataset":"lfsi_emp_a"},{"label":{"dataset":"Employment and activity by sex and age - quarterly data"},"dataset":"lfsi_emp_q"},{"label":{"dataset":"Labour market slack by sex and age - quarterly data"},"dataset":"lfsi_sla_q"},{"label":{"dataset":"Labour market slack by indicator and age - quarterly data"},"dataset":"lfsi_sla_q"},{"label":{"dataset":"Asylum and first time asylum applicants by citizenship, age and sex - annual aggregated data (rounded)"},"dataset":"migr_asyappctza"},{"label":{"dataset":"Unemployment by sex and age – quarterly data"},"dataset":"une_rt_q"},{"label":{"dataset":"Personal transfers and compensation of employees"},"dataset":"bop_rem6"},{"label":{"dataset":"Economic accounts for agriculture - values at current prices"},"dataset":"aact_eaa01"},{"label":{"dataset":"Acquisition of citizenship by age group, sex and former citizenship"},"dataset":"migr_acq"},{"label":{"dataset":"House price index (2015 = 100) - quarterly data"},"dataset":"prc_hpi_q"},{"label":{"dataset":"Nights spent at tourist accommodation establishments"},"dataset":"tour_occ_ninat"},{"label":{"dataset":"Share of energy from renewable sources"},"dataset":"nrg_ind_ren"},{"label":{"dataset":"First permits by reason, length of validity and citizenship"},"dataset":"migr_resfirst"},{"label":{"dataset":"General government expenditure by function (COFOG)"},"dataset":"gov_10a_exp"},{"label":{"dataset":"Job vacancy statistics by NACE Rev. 2 activity - quarterly data (from 2001 onwards)"},"dataset":"jvs_q_nace2"},{"label":{"dataset":"Population on 1 January by age group, sex and NUTS 3 region"},"dataset":"demo_r_pjangrp3"},{"label":{"dataset":"GERD by sector of performance"},"dataset":"rd_e_gerdtot"},{"label":{"dataset":"Expenditure: main results"},"dataset":"spr_exp_sum"},{"label":{"dataset":"Positions held by women in senior management positions (source: EIGE)"},"dataset":"sdg_05_60"},{"label":{"dataset":"Purchasing power parities (PPPs), price level indices and real expenditures for ESA 2010 aggregates"},"dataset":"prc_ppp_ind"},{"label":{"dataset":"Average rating of satisfaction by domain, sex, age and educational attainment level"},"dataset":"ilc_pw01"},{"label":{"dataset":"Liabilities of government controlled entities classified outside general government"},"dataset":"gov_cl_liab"},{"label":{"dataset":"Government guarantees"},"dataset":"gov_cl_guar"},{"label":{"dataset":"Non-performing loans of government"},"dataset":"gov_cl_npl"},{"label":{"dataset":"Liabilities related to private-public partnerships (PPPs) recorded off-balance sheet of government"},"dataset":"gov_cl_ppp"},{"label":{"dataset":"Energy efficiency"},"dataset":"nrg_ind_eff"},{"label":{"dataset":"Treatable and preventable mortality of residents by cause and sex"},"dataset":"hlth_cd_apr"}
+  {
+    "label": {
+        "dataset": "Production in construction - monthly data"
+    },
+    "dataset": "sts_copr_m",
+    "filter": {}
+  },
+
+
+
+  {
+      "label": {
+          "dataset": "HICP (2015 = 100) - monthly data (annual rate of change)"
+      },
+      "dataset": "prc_hicp_manr",
+      "filter": {
+          "coicop": [
+              "CP00",
+              "CP01",
+              "CP02",
+              "CP03",
+              "CP04",
+              "CP05",
+              "CP06",
+              "CP07",
+              "CP08",
+              "CP09",
+              "CP10",
+              "CP11",
+              "CP12"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "GDP and main components (output, expenditure and income)"
+      },
+      "dataset": "namq_10_gdp",
+      "filter": {
+          "na_item": [
+              "B1G",
+              "B1GQ",
+              "P3",
+              "P41",
+              "P51G",
+              "P5G",
+              "P6",
+              "P7",
+              "B11",
+              "B2A3G",
+              "D1",
+              "D2",
+              "D3",
+              "P52",
+              "P53"
+          ],
+          "unit": [
+              "CLV_PCH_PRE",
+              "CLV_PCH_SM"
+          ],
+          "s_adj": [
+              "SCA"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Employment by NACE Rev.2 - percentage change Q/Q-1"
+      },
+      "dataset": "tec00108",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Employment by NACE Rev.2 - thousand persons"
+      },
+      "dataset": "tec00109",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Employment by NACE Rev.2 - percentage change Q/Q-4, NSA"
+      },
+      "dataset": "teina305",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Deaths by week and sex"
+      },
+      "dataset": "demo_r_mwk_ts",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Production in industry - monthly data"
+      },
+      "dataset": "sts_inpr_m",
+      "filter": {
+          "unit": [
+              "I15",
+              "PCH_SM"
+          ],
+          "s_adj": [
+              "CA",
+              "SCA"
+          ],
+          "nace_r2": [
+              "B",
+              "B-D",
+              "C",
+              "D",
+              "MIG_CAG",
+              "MIG_DCOG",
+              "MIG_ING",
+              "MIG_NDCOG",
+              "MIG_NRG_X_E"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "GDP and main aggregates - selected international quarterly data (Percentage change compared to same period in previous year)"
+      },
+      "dataset": "naidq_10_gdp",
+      "filter": {
+          "na_item": [
+              "B11",
+              "B1G",
+              "B1GQ",
+              "D21X31",
+              "P3",
+              "P31_S14_S15",
+              "P3_S13",
+              "P41",
+              "P51G",
+              "P5G",
+              "P6",
+              "P7",
+              "D1",
+              "D11",
+              "D2X3"
+          ],
+          "unit": [
+              "CLV_PCH_SM"
+          ],
+          "s_adj": [
+              "SCA"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Producer prices in industry, domestic market - monthly data"
+      },
+      "dataset": "sts_inppd_m",
+      "filter": {
+          "nace_r2": [
+              "B-E36",
+              "B_C_X_MIG_NRG",
+              "MIG_CAG",
+              "MIG_DCOG",
+              "MIG_ING",
+              "MIG_NDCOG",
+              "MIG_NRG"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Turnover and volume of sales in wholesale and retail trade - monthly data"
+      },
+      "dataset": "sts_trtu_m",
+      "filter": {
+          "nace_r2": [
+              "G",
+              "G45",
+              "G46",
+              "G47"
+          ],
+          "indic_bt": [
+              "TOVV"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Gross domestic product (GDP) at current market prices by NUTS 2 regions"
+      },
+      "dataset": "nama_10r_2gdp",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Fertility indicators"
+      },
+      "dataset": "demo_find",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Balance of payments by country - quarterly data (BPM6)"
+      },
+      "dataset": "bop_c6_q",
+      "filter": {
+          "sector10": [
+              "S1"
+          ],
+          "currency": [
+              "MIO_EUR"
+          ],
+          "partner": [
+              "WRL_REST"
+          ],
+          "sectpart": [
+              "S1"
+          ],
+          "bop_item": [
+              "CA",
+              "FA__D__F",
+              "G",
+              "S"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Causes of death - deaths by country of residence and occurrence"
+      },
+      "dataset": "hlth_cd_aro",
+      "filter": {
+          "sex": [
+              "T"
+          ],
+          "resid": [
+              "TOT_RESID"
+          ],
+          "age": [
+              "TOTAL"
+          ],
+          "icd10": [
+              "A-R_V-Y",
+              "A_B",
+              "C",
+              "D00-D48",
+              "D50-D89",
+              "E",
+              "F",
+              "G_H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O",
+              "P",
+              "Q",
+              "R",
+              "V01-Y89"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Air passenger transport by reporting country"
+      },
+      "dataset": "avia_paoc",
+      "filter": {
+          "geo": [
+              "EU28",
+              "IT"
+          ],
+          "schedule": [
+              "TOT"
+          ],
+          "tra_cov": [
+              "TOTAL"
+          ],
+          "tra_meas": [
+              "PAS_BRD",
+              "PAS_BRD_ARR",
+              "PAS_BRD_DEP",
+              "PAS_CRD",
+              "PAS_CRD_ARR",
+              "PAS_CRD_DEP"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Mean and median income by age and sex - EU-SILC and ECHP surveys"
+      },
+      "dataset": "ilc_di03",
+      "filter": {
+          "unit": [
+              "EUR"
+          ],
+          "age": [
+              "TOTAL",
+              "Y12-17",
+              "Y18-24",
+              "Y25-54",
+              "Y55-64",
+              "Y6-11",
+              "Y_GE65",
+              "Y_LT6"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "At-risk-of-poverty thresholds - EU-SILC and ECHP surveys"
+      },
+      "dataset": "ilc_li01",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "At-risk-of-poverty rate by poverty threshold, age and sex - EU-SILC and ECHP surveys"
+      },
+      "dataset": "ilc_li02",
+      "filter": {
+          "indic_il": [
+              "LI_R_MD60"
+          ],
+          "age": [
+              "TOTAL",
+              "Y12-17",
+              "Y18-24",
+              "Y25-54",
+              "Y55-64",
+              "Y6-11",
+              "Y_GE65",
+              "Y_LT6"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "People living in households with very low work intensity by age and sex (population aged 0 to 59 years)"
+      },
+      "dataset": "ilc_lvhl11",
+      "filter": {
+          "age": [
+              "Y12-17",
+              "Y18-24",
+              "Y25-54",
+              "Y55-59",
+              "Y6-11",
+              "Y_LT6",
+              "Y_LT60"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Severe material deprivation rate by age and sex"
+      },
+      "dataset": "ilc_mddd11",
+      "filter": {
+          "age": [
+              "TOTAL",
+              "Y12-17",
+              "Y18-24",
+              "Y25-54",
+              "Y55-64",
+              "Y6-11",
+              "Y_GE65",
+              "Y_LT6"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "People at risk of poverty or social exclusion by age and sex"
+      },
+      "dataset": "ilc_peps01",
+      "filter": {
+          "unit": [
+              "PC",
+              "THS_PER"
+          ],
+          "age": [
+              "TOTAL",
+              "Y12-17",
+              "Y18-24",
+              "Y25-54",
+              "Y55-64",
+              "Y6-11",
+              "Y_GE65",
+              "Y_LT6"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Unemployment by sex and age – monthly data"
+      },
+      "dataset": "une_rt_m",
+      "filter": {
+          "s_adj": [
+              "SA"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Activities via internet not done because of security concerns"
+      },
+      "dataset": "isoc_cisci_ax",
+      "filter": {
+          "ind_type": [
+              "CC_FOR",
+              "CC_NAT",
+              "IND_TOTAL"
+          ],
+          "indic_is": [
+              "I_SBANY",
+              "I_SBBANK",
+              "I_SBGOOD",
+              "I_SBGOV",
+              "I_SBMOB1",
+              "I_SBOTH",
+              "I_SBPERS",
+              "I_SBSOFT"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Security related problems experienced when using the internet"
+      },
+      "dataset": "isoc_cisci_pb",
+      "filter": {
+          "ind_type": [
+              "IND_TOTAL"
+          ],
+          "unit": [
+              "PC_IND",
+              "PC_IND_ILT12"
+          ],
+          "indic_is": [
+              "I_SECANY",
+              "I_SECFL2",
+              "I_SECFRD2",
+              "I_SECMPI",
+              "I_SECOIT",
+              "I_SECPHA",
+              "I_SECPHI",
+              "I_SECSNH",
+              "I_SECVIR1"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Individuals who ordered goods or services over the internet for private use"
+      },
+      "dataset": "isoc_r_blt12_i",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Key indicators"
+      },
+      "dataset": "nasq_10_ki",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Employment (thousand persons) by NUTS 3 regions"
+      },
+      "dataset": "nama_10r_3empers",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Live births by mother's age and birth order"
+      },
+      "dataset": "demo_fordagec",
+      "filter": {
+          "age": [
+              "TOTAL",
+              "Y10-14",
+              "Y15-19",
+              "Y20-24",
+              "Y25-29",
+              "Y30-34",
+              "Y35-39",
+              "Y40-44",
+              "Y45-49",
+              "Y_GE50"
+          ],
+          "ord_brth": [
+              "1",
+              "2",
+              "3",
+              "GE4",
+              "TOTAL"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Population change - Demographic balance and crude rates at national level"
+      },
+      "dataset": "demo_gind",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Extra-EU trade by Member State, shares by invoicing currency"
+      },
+      "dataset": "ext_lt_invcur",
+      "filter": {
+          "partner": [
+              "EXT_EU"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Long-term unemployment (12 months and more) by sex, age, educational attainment level and NUTS 2 regions (%)"
+      },
+      "dataset": "lfst_r_lfu2ltu",
+      "filter": {
+          "age": [
+              "Y_GE15"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Unemployment rates by sex, age, educational attainment level and NUTS 2 regions (%)"
+      },
+      "dataset": "lfst_r_lfu3rt",
+      "filter": {
+          "age": [
+              "Y_GE15",
+              "Y_GE25"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "International trade in services (since 2010) (BPM6)"
+      },
+      "dataset": "bop_its6_det",
+      "filter": {
+          "partner": [
+              "EXT_EU28"
+          ],
+          "bop_item": [
+              "S",
+              "SA",
+              "SB",
+              "SC",
+              "SD",
+              "SE",
+              "SF",
+              "SG",
+              "SH",
+              "SI",
+              "SJ",
+              "SK",
+              "SL",
+              "SN"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Quarterly government debt"
+      },
+      "dataset": "gov_10q_ggdebt",
+      "filter": {
+          "na_item": [
+              "F2",
+              "F3",
+              "F4",
+              "GD",
+              "IGL_F4_EU28"
+          ],
+          "unit": [
+              "MIO_EUR",
+              "PC_GDP",
+              "PC_TOT"
+          ],
+          "sector": [
+              "S13",
+              "S1311",
+              "S1313",
+              "S1314"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Gas prices for household consumers - bi-annual data (from 2007 onwards)"
+      },
+      "dataset": "nrg_pc_202",
+      "filter": {
+          "unit": [
+              "KWH"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Main national accounts tax aggregates"
+      },
+      "dataset": "gov_10a_taxag",
+      "filter": {
+          "sector": [
+              "S13",
+              "S13_S212",
+              "S212"
+          ],
+          "na_item": [
+              "D2",
+              "D2_D5_D91_D61_M_D995",
+              "D5",
+              "D61",
+              "D91",
+              "D995"
+          ],
+          "unit": [
+              "MIO_EUR",
+              "PC_GDP"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Government deficit/surplus, debt and associated data"
+      },
+      "dataset": "gov_10dd_edpt1",
+      "filter": {
+          "na_item": [
+              "B1GQ",
+              "B5GQ",
+              "B9",
+              "GD"
+          ],
+          "unit": [
+              "MIO_EUR",
+              "PC_GDP"
+          ],
+          "sector": [
+              "S1",
+              "S13",
+              "S1311",
+              "S1312",
+              "S1313",
+              "S1314"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Asylum applicants considered to be unaccompanied minors by citizenship, age and sex - annual data (rounded)"
+      },
+      "dataset": "migr_asyunaa",
+      "filter": {
+          "citizen": [
+              "EXT_EU28"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Nights spent at tourist accommodation establishments - monthly data"
+      },
+      "dataset": "tour_occ_nim",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Population by educational attainment level, sex and age (%) - main indicators"
+      },
+      "dataset": "edat_lfse_03",
+      "filter": {
+          "sex": [
+              "T"
+          ],
+          "isced11": [
+              "ED0-2",
+              "ED3-8",
+              "ED3_4",
+              "ED5-8"
+          ],
+          "age": [
+              "Y15-64",
+              "Y20-24",
+              "Y25-34",
+              "Y35-44",
+              "Y45-64"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Labour cost levels by NACE Rev. 2 activity"
+      },
+      "dataset": "lc_lci_lev",
+      "filter": {
+          "nace_r2": [
+              "B",
+              "B-S_X_O",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "M",
+              "N",
+              "P",
+              "Q",
+              "R",
+              "S"
+          ],
+          "lcstruct": [
+              "D11",
+              "D1_D4_MD5"
+          ],
+          "unit": [
+              "EUR"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Labour cost index by NACE Rev. 2 activity - nominal value, quarterly data"
+      },
+      "dataset": "lc_lci_r2_q",
+      "filter": {
+          "nace_r2": [
+              "B-E",
+              "B-S",
+              "F",
+              "G-J",
+              "K-N",
+              "O-S"
+          ],
+          "lcstruct": [
+              "D11",
+              "D12_D4_MD5",
+              "D1_D4_MD5"
+          ],
+          "unit": [
+              "PCH_SM"
+          ],
+          "s_adj": [
+              "CA"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Number of trips"
+      },
+      "dataset": "tour_dem_tttot",
+      "filter": {
+          "unit": [
+              "NR"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Number of trips by mode of transport"
+      },
+      "dataset": "tour_dem_tttr",
+      "filter": {
+          "purpose": [
+              "TOTAL"
+          ],
+          "duration": [
+              "N_GE1"
+          ],
+          "partner": [
+              "DOM",
+              "OUT",
+              "WORLD"
+          ],
+          "tra_mode": [
+              "AIR",
+              "BUS",
+              "CAR",
+              "LAND",
+              "OTH",
+              "RAIL",
+              "TOTAL",
+              "WW"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Employees by sex, age and occupation (1 000)"
+      },
+      "dataset": "lfsa_eegais",
+      "filter": {
+          "age": [
+              "Y15-64"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Final decisions in appeal or review on applications by citizenship, age and sex - annual data (rounded)"
+      },
+      "dataset": "migr_asydcfina",
+      "filter": {
+          "citizen": [
+              "EXT_EU28"
+          ],
+          "sex": [
+              "T"
+          ],
+          "decision": [
+              "REJECTED",
+              "TOTAL",
+              "TOTAL_POS"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Member States (EU28) trade by BEC product group since 1999"
+      },
+      "dataset": "ext_st_28msbec",
+      "filter": {
+          "bclas_bec": [
+              "TOTAL"
+          ],
+          "indic_et": [
+              "TRD_VAL",
+              "TRD_VAL_RT12"
+          ],
+          "partner": [
+              "EU28",
+              "EXT_EU28",
+              "WORLD"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Electricity prices for household consumers - bi-annual data (from 2007 onwards)"
+      },
+      "dataset": "nrg_pc_204",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Absence from work by main reason, sex and age group - quarterly data"
+      },
+      "dataset": "lfsi_abs_q",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Index of total actual hours worked in the main job by sex and age group (2006 = 100) - quarterly data"
+      },
+      "dataset": "lfsi_ahw_q",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Employment and activity by sex and age - annual data"
+      },
+      "dataset": "lfsi_emp_a",
+      "filter": {
+          "age": [
+              "Y15-64",
+              "Y20-64",
+              "Y25-54",
+              "Y55-64"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Employment and activity by sex and age - quarterly data"
+      },
+      "dataset": "lfsi_emp_q",
+      "filter": {
+          "s_adj": [
+              "SA"
+          ],
+          "age": [
+              "Y15-24",
+              "Y15-64",
+              "Y25-54",
+              "Y55-64"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Labour market slack by sex and age - quarterly data"
+      },
+      "dataset": "lfsi_sla_q",
+      "filter": {
+          "indic_em": [
+              "SLACK"
+          ],
+          "s_adj": [
+              "SA"
+          ],
+          "age": [
+              "Y15-24",
+              "Y15-74",
+              "Y20-64",
+              "Y25-54",
+              "Y55-74"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Asylum and first time asylum applicants by citizenship, age and sex - annual aggregated data (rounded)"
+      },
+      "dataset": "migr_asyappctza",
+      "filter": {
+          "citizen": [
+              "TOTAL"
+          ],
+          "sex": [
+              "F",
+              "M",
+              "T",
+              "UNK"
+          ],
+          "asyl_app": [
+              "ASY_APP",
+              "NASY_APP"
+          ],
+          "age": [
+              "TOTAL",
+              "UNK",
+              "Y18-34",
+              "Y35-64",
+              "Y_GE65",
+              "Y_LT18"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Unemployment by sex and age – quarterly data"
+      },
+      "dataset": "une_rt_q",
+      "filter": {
+          "s_adj": [
+              "SA"
+          ],
+          "age": [
+              "Y15-24",
+              "Y15-74",
+              "Y20-64",
+              "Y25-54",
+              "Y55-74"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Personal transfers and compensation of employees"
+      },
+      "dataset": "bop_rem6",
+      "filter": {
+          "partner": [
+              "AFR_C_S",
+              "AFR_N",
+              "AME_LAT",
+              "AME_N",
+              "ASI",
+              "EU28",
+              "EXT_EU28",
+              "OCE_PLR",
+              "WRL_REST"
+          ],
+          "currency": [
+              "MIO_EUR"
+          ],
+          "bop_item": [
+              "D752"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Economic accounts for agriculture - values at current prices"
+      },
+      "dataset": "aact_eaa01",
+      "filter": {
+          "itm_newa": [
+              "01000",
+              "02000",
+              "03000",
+              "04000",
+              "05000",
+              "06000",
+              "07000",
+              "08000",
+              "09000",
+              "10000",
+              "11000",
+              "12000",
+              "13000",
+              "14000",
+              "15000",
+              "16000",
+              "17000",
+              "18000",
+              "19000",
+              "20000",
+              "21000",
+              "22000",
+              "23000",
+              "24000",
+              "25000",
+              "26000",
+              "27000",
+              "28000",
+              "29000",
+              "30000",
+              "31000",
+              "32000",
+              "33000",
+              "34000",
+              "35000",
+              "36000",
+              "37000"
+          ],
+          "indic_ag": [
+              "PROD_BP"
+          ],
+          "unit": [
+              "MIO_EUR"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Acquisition of citizenship by age group, sex and former citizenship"
+      },
+      "dataset": "migr_acq",
+      "filter": {
+          "citizen": [
+              "TOTAL"
+          ],
+          "sex": [
+              "T"
+          ],
+          "age": [
+              "TOTAL",
+              "UNK",
+              "Y10-14",
+              "Y15-19",
+              "Y20-24",
+              "Y25-29",
+              "Y30-34",
+              "Y35-39",
+              "Y40-44",
+              "Y45-49",
+              "Y5-9",
+              "Y50-54",
+              "Y55-59",
+              "Y60-64",
+              "Y65-69",
+              "Y70-74",
+              "Y75-79",
+              "Y80-84",
+              "Y85-89",
+              "Y90-94",
+              "Y95-99",
+              "Y_GE100",
+              "Y_LT5"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "House price index (2015 = 100) - quarterly data"
+      },
+      "dataset": "prc_hpi_q",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Nights spent at tourist accommodation establishments"
+      },
+      "dataset": "tour_occ_ninat",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Share of energy from renewable sources"
+      },
+      "dataset": "nrg_ind_ren",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "First permits by reason, length of validity and citizenship"
+      },
+      "dataset": "migr_resfirst",
+      "filter": {
+          "citizen": [
+              "TOTAL"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "General government expenditure by function (COFOG)"
+      },
+      "dataset": "gov_10a_exp",
+      "filter": {
+          "sector": [
+              "S13"
+          ],
+          "na_item": [
+              "TE"
+          ],
+          "unit": [
+              "MIO_EUR",
+              "PC_GDP"
+          ],
+          "cofog99": [
+              "GF01",
+              "GF02",
+              "GF03",
+              "GF04",
+              "GF05",
+              "GF06",
+              "GF07",
+              "GF08",
+              "GF09",
+              "GF10",
+              "GF1001",
+              "GF1002",
+              "GF1003",
+              "GF1004",
+              "GF1005",
+              "GF1006",
+              "GF1007",
+              "GF1008",
+              "GF1009",
+              "TOTAL"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Job vacancy statistics by NACE Rev. 2 activity - quarterly data (from 2001 onwards)"
+      },
+      "dataset": "jvs_q_nace2",
+      "filter": {
+          "indic_em": [
+              "JOBRATE"
+          ],
+          "sizeclas": [
+              "TOTAL"
+          ],
+          "nace_r2": [
+              "B",
+              "B-S",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I",
+              "J",
+              "K",
+              "L",
+              "M",
+              "N",
+              "O",
+              "P",
+              "Q",
+              "R",
+              "S"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Population on 1 January by age group, sex and NUTS 3 region"
+      },
+      "dataset": "demo_r_pjangrp3",
+      "filter": {
+          "sex": [
+              "T"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "GERD by sector of performance"
+      },
+      "dataset": "rd_e_gerdtot",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Expenditure: main results"
+      },
+      "dataset": "spr_exp_sum",
+      "filter": {
+          "unit": [
+              "MIO_EUR",
+              "PC_BEN",
+              "PC_GDP"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Positions held by women in senior management positions (source: EIGE)"
+      },
+      "dataset": "sdg_05_60",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Purchasing power parities (PPPs), price level indices and real expenditures for ESA 2010 aggregates"
+      },
+      "dataset": "prc_ppp_ind",
+      "filter": {
+          "na_item": [
+              "EXP_EUR",
+              "EXP_EUR_HAB",
+              "EXP_PPS_EU28",
+              "EXP_PPS_EU28_HAB",
+              "PLI_EU28",
+              "PPP_EU28",
+              "VI_PPS_EU28_HAB"
+          ],
+          "ppp_cat": [
+              "A01",
+              "A04",
+              "A05",
+              "E01",
+              "GDP",
+              "P01",
+              "P02"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Average rating of satisfaction by domain, sex, age and educational attainment level"
+      },
+      "dataset": "ilc_pw01",
+      "filter": {
+          "sex": [
+              "T"
+          ],
+          "indic_wb": [
+              "ACCSAT",
+              "FINSAT",
+              "JOBSAT",
+              "LIFESAT",
+              "LIVENVSAT",
+              "RELSAT",
+              "TIMESAT"
+          ],
+          "isced11": [
+              "TOTAL"
+          ],
+          "age": [
+              "Y16-24",
+              "Y25-34",
+              "Y35-49",
+              "Y50-64",
+              "Y65-74",
+              "Y_GE16",
+              "Y_GE75"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Liabilities of government controlled entities classified outside general government"
+      },
+      "dataset": "gov_cl_liab",
+      "filter": {
+          "co_nco": [
+              "NCO"
+          ]
+      }
+  },
+  {
+      "label": {
+          "dataset": "Government guarantees"
+      },
+      "dataset": "gov_cl_guar",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Non-performing loans of government"
+      },
+      "dataset": "gov_cl_npl",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Liabilities related to private-public partnerships (PPPs) recorded off-balance sheet of government"
+      },
+      "dataset": "gov_cl_ppp",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Energy efficiency"
+      },
+      "dataset": "nrg_ind_eff",
+      "filter": {}
+  },
+  {
+      "label": {
+          "dataset": "Treatable and preventable mortality of residents by cause and sex"
+      },
+      "dataset": "hlth_cd_apr",
+      "filter": {
+          "icd10": [
+              "TOTAL"
+          ]
+      }
+  }
 ]
