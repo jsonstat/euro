@@ -64,7 +64,7 @@ import * as EuroJSONstat from "jsonstat-euro";
 The safest way to load the jsonstat-euro in [Observable](https://observablehq.com/) is:
 
 ```js
-EuroJSONstat = import('jsonstat-euro@1.0.6/import.mjs');
+EuroJSONstat = import("jsonstat-euro@1.0.6/import.mjs");
 ```
 
 Or simply import the functions you need from @jsonstat/euro. For example, to use fetchDataset and setRole (renamed as role):
