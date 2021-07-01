@@ -23,10 +23,24 @@ export default function setRole(ds){
       break;
       case "unit":
       case "s_adj":
+      case "indic_co":
         ds.role.metric.push(d);
       break;
       default:
         ds.role.classification.push(d);
     }
   });
+
+  if(!ds.role.geo.length){
+    delete ds.role.geo;
+  }
+  if(!ds.role.time.length){
+    delete ds.role.time;
+  }
+  if(!ds.role.metric.length){
+    delete ds.role.metric;
+  }
+  if(!ds.role.classification.length){
+    delete ds.role.classification;
+  }
 }

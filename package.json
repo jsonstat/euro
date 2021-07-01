@@ -1,6 +1,6 @@
 {
 	"name": "jsonstat-euro",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "A library to deal with Eurostat's JSON-stat API",
 	"homepage": "https://jsonstat.com",
 	"keywords": [
@@ -38,7 +38,7 @@
 		"rollup": "^1.27.1",
 		"@rollup/plugin-json": "^4.0.0",
 		"rollup-plugin-babel": "^4.3.3",
-		"rollup-plugin-node-resolve": "^5.2.0",
+		"@rollup/plugin-node-resolve": "^11.2.0",
 		"rollup-plugin-terser": "^5.1.2",
 		"@babel/core": "^7.7.4",
 		"@babel/preset-env": "^7.7.4"
