@@ -1,7 +1,7 @@
-import json from '@rollup/plugin-json';
+import json from "@rollup/plugin-json";
 import {terser} from "rollup-plugin-terser";
-import resolve from 'rollup-plugin-node-resolve';
-import babel from 'rollup-plugin-babel'
+import resolve from "@rollup/plugin-node-resolve";
+import babel from "@rollup/plugin-babel";
 import * as pkg from "./package.json";
 
 const
@@ -10,7 +10,7 @@ const
   external=["jsonstat-toolkit"],
   preamble=`// ${pkg.name} v${pkg.version} Copyright ${(new Date).getFullYear()} ${pkg.author.name} ${pkg.homepage}`,
   plugins=[
-    babel(),
+    babel({ babelHelpers: "bundled" }),
     json(),
     terser({ output: { preamble } })
   ]

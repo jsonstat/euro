@@ -24,6 +24,8 @@ export default function setRole(ds){
       case "unit":
       case "s_adj":
       case "indic_co":
+      case "na_item":
+      case "indic":
         ds.role.metric.push(d);
       break;
       default:

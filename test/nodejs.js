@@ -3,7 +3,7 @@ const
 	query={
 		dataset: "une_rt_a",
 		filter: {
-			age: ["TOTAL"],
+			age: ["Y25-74"],
 			sex: ["T"]
 		}
 	}
@@ -27,7 +27,7 @@ EuroJSONstat.fetchDataset(query).then(ds=>{
 		//When standardized, Eurostat's datasets are enriched with roles
 		console.log(`Classification dimensions: ${classification}\n`);
 
-		console.log(`Unemployment rare in 2018 in EU28: ${unemploy} %\n`);
+		console.log(`Unemployment rate in 2018 in EU28: ${unemploy} %\n`);
 
 		//Eurostat status meaning is easily retrieved
 		console.log(`Status symbol of first observation in the dataset is "${status}" which means "${statusLabel}".`);
