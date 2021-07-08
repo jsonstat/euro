@@ -8,7 +8,17 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/combine/npm/es6-promise@4.2.8,npm/whatwg-fetch@3.0.0,npm/jsonstat-toolkit@1.0.8,npm/jsonstat-euro@1.0.6,npm/jsonstat-suite@3.0.3"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/es6-promise@4.2.8,npm/whatwg-fetch@3.0.0,npm/jsonstat-toolkit@1.0.8,npm/jsonstat-euro@1.3.1,npm/jsonstat-suite@3.2.2"></script>
+  <style>
+  #warning {
+    border: 1px solid #000;
+    margin: 10px 0;
+    padding: 10px;
+    color: #c00;
+    background-color: #ffe5e5;
+    font-weight: bold;
+  }
+  </style>
 </head>
 <body>
   <main>
@@ -19,6 +29,7 @@
     </ul>
     <div id="datasets"></div>
     <div id="dimensions">
+      <p id="warning">Unless you want to browse the code, there is a much more powerful version of this tool at <a href="https://jsonstat.com/eurostat/">jsonstat.com/eurostat/</a></p>
       <p>This page is several things:</p>
       <ul>
         <li>A demostration of the <strong><a href="https://www.npmjs.com/package/jsonstat-euro">JSON-stat for Eurostat</a> package</strong></li>
