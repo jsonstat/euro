@@ -10,11 +10,19 @@ import hasProp from "../query/hasprop.js";
  * Tries to convert (async) an unfiltered query into a fully explicit one
  * by fetching datasets
  * @param {Object|string} query Query or dataset ID
+ * @param {Boolean} time Use last time period available
+ * @param {option} option "first" (default), "last", "middle". Category selection criterion
  * @returns {Object} a fully explicit query on success
  */
-export default function fetchFullQuery(query){
+export default function fetchFullQuery(query, time, option){
   if(typeof query==="string"){
     query={ dataset: query };
+  }
+  if(typeof time!=="boolean"){
+    time=false;
+  }
+  if(typeof option!=="string"){
+    option="first";
   }
 
   const filter=(hasProp(query, "filter")) ? query.filter : null;
@@ -31,7 +39,7 @@ export default function fetchFullQuery(query){
       }
 
       const
-        simple=simpleQuery(ds),
+        simple=simpleQuery(ds, time, option),
         open=removeParamQuery(simple, filterDimensions)
       ;
 
