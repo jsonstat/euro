@@ -11,10 +11,11 @@ import hasProp from "../query/hasprop.js";
  * by fetching datasets
  * @param {Object|string} query Query or dataset ID
  * @param {Boolean} time Use last time period available
- * @param {option} option "first" (default), "last", "middle". Category selection criterion
+ * @param {String} option "first" (default), "last", "middle". Category selection criterion
+ * @param {String} geo Preferred geo value in case one has to be picked (option will be ignored for geo dimension)
  * @returns {Object} a fully explicit query on success
  */
-export default function fetchFullQuery(query, time, option){
+export default function fetchFullQuery(query, time, option, geo){
   if(typeof query==="string"){
     query={ dataset: query };
   }
@@ -23,6 +24,9 @@ export default function fetchFullQuery(query, time, option){
   }
   if(typeof option!=="string"){
     option="first";
+  }
+  if(typeof geo!=="string"){
+    geo=null;
   }
 
   const filter=(hasProp(query, "filter")) ? query.filter : null;
@@ -39,7 +43,7 @@ export default function fetchFullQuery(query, time, option){
       }
 
       const
-        simple=simpleQuery(ds, time, option),
+        simple=simpleQuery(ds, time, option, geo),
         open=removeParamQuery(simple, filterDimensions)
       ;
 
