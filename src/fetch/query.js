@@ -23,6 +23,14 @@ export default function fetchQuery(query, last){
       if(ds.class==="error"){
         return ds;
       }
+      //Eurostat error format
+      if(ds.error){
+        return {
+          class: "error",
+          status: ds.error.status,
+          label: ds.error.label
+        };
+      }
 
       const
         filter={},

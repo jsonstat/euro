@@ -10,17 +10,17 @@
 
 ```html
 <script src="https://unpkg.com/jsonstat-toolkit@1.3.2"></script>
-<script src="https://unpkg.com/jsonstat-euro@1.1.1"></script>
+<script src="https://unpkg.com/jsonstat-euro@1.1.2"></script>
 ```
 
 ```html
-<script src="https://cdn.jsdelivr.net/combine/npm/jsonstat-toolkit@1.3.2,npm/jsonstat-euro@1.1.1"></script>
+<script src="https://cdn.jsdelivr.net/combine/npm/jsonstat-toolkit@1.3.2,npm/jsonstat-euro@1.1.2"></script>
 ```
 
 The JSON-stat for Eurostat works on any modern browser. It also supports Internet Explorer 9 or higher as long as its connection capabilities (fetch* functions) are not used. To support its connection capabilities polyfills for [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) are required:
 
 ```html
-<script src="https://cdn.jsdelivr.net/combine/npm/es6-promise@4.2.8,npm/whatwg-fetch@3.0.0,npm/jsonstat-toolkit@1.3.2,npm/jsonstat-euro@1.1.1"></script>
+<script src="https://cdn.jsdelivr.net/combine/npm/es6-promise@4.2.8,npm/whatwg-fetch@3.0.0,npm/jsonstat-toolkit@1.3.2,npm/jsonstat-euro@1.1.2"></script>
 ```
 
 ### ECMAScript module
@@ -29,13 +29,13 @@ Very modern browsers support ECMAScript modules. Copy the latest version of the 
 
 ```html
 <script type="module">
-import * as EuroJSONstat from "https://cdn.jsdelivr.net/npm/jsonstat-euro@1.1.1/import.mjs";
+import * as EuroJSONstat from "https://cdn.jsdelivr.net/npm/jsonstat-euro@1.1.2/import.mjs";
 </script>
 ```
 
 ```html
 <script type="module">
-import * as EuroJSONstat from "https://unpkg.com/jsonstat-euro@1.1.1/import.mjs";
+import * as EuroJSONstat from "https://unpkg.com/jsonstat-euro@1.1.2/import.mjs";
 </script>
 ```
 
@@ -64,7 +64,7 @@ import * as EuroJSONstat from "jsonstat-euro";
 The safest way to load the jsonstat-euro in [Observable](https://observablehq.com/) is:
 
 ```js
-EuroJSONstat = import("jsonstat-euro@1.1.1/import.mjs");
+EuroJSONstat = import("jsonstat-euro@1.1.2/import.mjs");
 ```
 
 Or simply import the functions you need from @jsonstat/euro. For example, to use fetchDataset and setRole (renamed as role):
