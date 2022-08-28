@@ -20,6 +20,10 @@ console.log(EuroJSONstat.version);
 
 Fetch functions are asynchronous functions that connect to Eurostat and retrieve dataset information. On error, the status code and message returned by the server are exposed in the reject function. If the error was produced on the client side, status code "418" is returned.
 
+<blockquote>
+<strong>Warning</strong>: Since version 2.0.0, JSON-stat for Eurostat uses the latest Eurostat dataset API (called API Statistics). Prior versions of JSON-stat for Eurostat used the old Eurostat dataset API (called JSON Web Service). See <a href="https://wikis.ec.europa.eu/display/EUROSTATHELP/API+Statistics+-+migrating+from+JSON+web+service+to+API+Statistics">API Statistics - migrating from JSON web service to API Statistics</a>.
+</blockquote>
+
 ### fetchDataset
 
 Takes a query, a dataset code or a Eurostat API end point and returns a promise of a jsonstat dataset instance.

@@ -3,7 +3,7 @@ const
 	query={
 		dataset: "une_rt_a",
 		filter: {
-			age: ["Y25-74"],
+			age: ["Y15-74"],
 			sex: ["T"]
 		}
 	}
@@ -17,8 +17,8 @@ EuroJSONstat.fetchDataset(query).then(ds=>{
 			dataset=query.dataset,
 			label=ds.label,
 			classification=ds.role.classification,
-			unemploy=ds.Data({time: "2018", unit: "PC_ACT", geo: "EU28"}).value,
-			status=ds.Data(0).status,
+			unemploy=ds.Data({time: "2021", unit: "PC_ACT", geo: "EU27_2020"}).value,
+			status=ds.Data({time: "2017", unit: "PC_ACT", geo: "BE"}).status,
 			statusLabel=EuroJSONstat.getStatusLabel(ds, status)
 		;
 
@@ -27,9 +27,9 @@ EuroJSONstat.fetchDataset(query).then(ds=>{
 		//When standardized, Eurostat's datasets are enriched with roles
 		console.log(`Classification dimensions: ${classification}\n`);
 
-		console.log(`Unemployment rate in 2018 in EU28: ${unemploy} %\n`);
+		console.log(`Unemployment rate in 2021 in EU27: ${unemploy} %\n`);
 
 		//Eurostat status meaning is easily retrieved
-		console.log(`Status symbol of first observation in the dataset is "${status}" which means "${statusLabel}".`);
+		console.log(`Status symbol of Belgium 2017 is "${status}" which means "${statusLabel}".`);
 	}
 });

@@ -8,8 +8,8 @@ import normalQuery from "../query/normal.js";
  * @returns {string} Eurostat API end point
  */
 export default function getURL(query){
-  const APIbase="https://ec.europa.eu/eurostat/wdds/rest/data/";
-
+  const APIbase="https://ec.europa.eu/eurostat/api/dissemination/statistics/";
+  
   //string
   if(typeof query==="string"){
     //url
@@ -27,7 +27,7 @@ export default function getURL(query){
       query=normalQuery(query);
 
       let
-        url=`${APIbase}v${query.version}/json/${query.lang}/${query.dataset}`,
+        url=`${APIbase}${query.version}/data/${query.dataset}?lang=${query.lang}`,
         param=[]
       ;
 
@@ -38,7 +38,7 @@ export default function getURL(query){
             param.push(`${dim}=${value}`);
           });
         });
-        url+="?"+param.join("&");
+        url+="&"+param.join("&");
       }
 
       return url;

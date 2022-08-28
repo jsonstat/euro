@@ -34,15 +34,17 @@ A query must contain a dataset property with a valid Eurostat dataset code:
 }
 ```
 
-A query can optionally request information on one of the Eurostat-supported languages (default is English). A specific Eurostat API version can also be requested (default is 2.1):
+A query can optionally request information on one of the Eurostat-supported languages (default is English). A specific Eurostat API version can also be requested:
 
 ```js
 {
   "dataset": "une_rt_a",
   "lang": "fr",
-  "version": "2.1"
+  "version": "1.0"
 }
 ```
+
+Since version 2.0.0, **Euro**JSON**stat** uses Eurostat's API Statitics and the default API version is 1.0. Prior versions of **Euro**JSON**stat** used Eurostat's JSON Web Service (the default version was 2.1).
 
 Queries can filter data in datasets. For instance, dataset *une_rt_a* for Austria in years 2017-2018 would require this query:
 
