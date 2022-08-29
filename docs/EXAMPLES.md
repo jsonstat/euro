@@ -6,8 +6,6 @@
 
 [GDP per capita in the EU](https://bl.ocks.org/badosa/54a79252883ab2c5a1fb788e9d98c200) (IIFE example)
 
-[EU vs. Brexit EU](https://bl.ocks.org/badosa/9378c6dd14a6e893a170872442ef1c5c) (ECMAscript module example)
-
 [GDP per capita in Europe](https://bl.ocks.org/badosa/a5f33fdf0509ad850fa915c586ea8780) (ECMAscript module example)
 
 [Several Indicators Trend Comparison](https://bl.ocks.org/badosa/d0a635ab4ee7e8b002c065d604186882) (ECMAscript module example)
