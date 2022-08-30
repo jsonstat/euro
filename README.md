@@ -99,7 +99,7 @@ EuroJSONstat.fetchQuery(iq, false).then(eq=>{
     }
   },
   "lang": "en",
-  "version": "2.1"
+  "version": "1.0"
 }
 ```
 
