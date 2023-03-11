@@ -35,6 +35,10 @@ export {
   default as fetchDataset
 } from "./fetch/dataset.js";
 
+export {
+  default as fetchEmptyDataset
+} from "./fetch/emptydataset.js";
+
 //Translation functions
 
 export {
