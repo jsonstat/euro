@@ -24,6 +24,30 @@ Fetch functions are asynchronous functions that connect to Eurostat and retrieve
 <strong>Warning</strong>: Since version 2.0.0, JSON-stat for Eurostat uses the latest Eurostat dataset API (called API Statistics). Prior versions of JSON-stat for Eurostat used the old Eurostat dataset API (called JSON Web Service). See <a href="https://wikis.ec.europa.eu/display/EUROSTATHELP/API+Statistics+-+migrating+from+JSON+web+service+to+API+Statistics">API Statistics - migrating from JSON web service to API Statistics</a>.
 </blockquote>
 
+### fetchEmptyDataset
+
+Takes a query, a dataset code or a Eurostat API end point and returns a promise of a JSON-stat metadata-only dataset (default) or of a jsonstat metadata-only dataset instance (when the second argument is true). If the query has filters, they will be ignored.
+
+```js
+EuroJSONstat.fetchEmptyDataset(
+  {
+    "dataset": "une_rt_a",
+    "lang": "fr"
+  },
+  true
+).then(ds=>{
+  if(ds.class==="error"){
+    console.log(`Error label: "${ds.label}"`);
+  }else{
+    console.log(`Dataset label: "${ds.label}"`);
+  }
+});
+```
+
+(If you use a dataset code as input, you won&rsquo;t be able to choose language or API version.)
+
+Take into account that when retrieving a jsonstat instance of very big datasets, the value property will be filled with as many nulls as expected values. When retrieving a JSON-stat object, the value property is an empty array.
+
 ### fetchDataset
 
 Takes a query, a dataset code or a Eurostat API end point and returns a promise of a jsonstat dataset instance.
