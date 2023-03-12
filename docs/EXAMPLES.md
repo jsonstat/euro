@@ -10,4 +10,4 @@
 
 [Several Indicators Trend Comparison](https://bl.ocks.org/badosa/d0a635ab4ee7e8b002c065d604186882) (ECMAscript module example)
 
-[Eurostat Datasets Browser](https://jsonstat.github.io/euro/) (see [code](https://github.com/jsonstat/euro/blob/gh-pages/index.max.js)) (IIFE example)
+[Eurostat’s Swiss Army Knife](https://jsonstat.com/eurostat/) (IIFE example)

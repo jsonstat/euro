@@ -7,7 +7,7 @@ import setRole from "../set/role.js";
 
 /**
  * Fetches (async) a normalized Eurostat jsonstat dataset.
- * @param {string|Object} query A Eurostat dataset ID, a Eurostat API endpoint or a query (filters are ignored)
+ * @param {string|Object} query A Eurostat dataset ID or a query (filters are ignored)
  * @param {boolean} instance Type of return value (Default false)
  * @returns {Object} jsonstat dataset instance or object on success
  */
@@ -21,7 +21,18 @@ export default function fetchEmptyDataset(o, instance){
 	
 	if(o){
 		if(typeof o==="string"){
-    		o={ dataset: o };
+			//url are not accepted
+			if(/https?:\/\//i.test(o)){
+				return new Promise((resolve) => {
+					 resolve({
+						class: "error",
+						status: 400,
+						label: "A URL was passed to fetchEmptyDataset. Only dataset codes and queries are accepted. "
+					});
+				});
+			}
+
+			o={ dataset: o };
   		}
 
 		o.filter={ time_period: ["null"] };

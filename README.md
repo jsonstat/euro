@@ -6,7 +6,17 @@ For instance, Eurostat does not include roles in its datasets. **Euro**JSON**sta
 
 JSON-stat does not provide a single way to describe status symbols. Instead, it offers the [extension](https://json-stat.org/format/#extension) property to allow providers to customize their JSON-stat responses to their needs. Eurostat uses a standardized way to attach a label to each status symbol. **Euro**JSON**stat** offers a method to retrieve such information (*getStatusLabel*).
 
-A design principle of the JSON-stat format is the strict separation of data and metadata in order to allow the use of exactly the same structure for full (data and metadata) responses, data-only responses and metadata-only responses. Unfortunately, Eurostat does not support metadata-only responses. **Euro**JSON**stat** offers a way to *try* to avoid this limitation (*fetchFullQuery*).
+A design principle of the JSON-stat format is the strict separation of data and metadata in order to allow the use of exactly the same structure for full (data and metadata) responses, data-only responses and metadata-only responses. Unfortunately, Eurostat does not support metadata-only responses. **Euro**JSON**stat** offers several ways to avoid this limitation: *fetchFullQuery* and, since version 2.1, *fetchEmptyDataset*.
+
+```js
+EuroJSONstat.fetchEmptyDataset("ei_cphi_m").then(js=>{
+  if(js.class==="error"){
+    console.log(`Error ${js.status} (${js.label})`);
+  }else{
+    console.log(js); //JSON-stat dataset with "value" as an empty array
+  }
+});
+```
 
 Finally, **Euro**JSON**stat** includes a function to convert a fully explicit query (see later) into a metadata-only dataset instance (*getEmptyDataset*).
 
@@ -149,6 +159,8 @@ EuroJSONstat.addParamQuery(
 ```
 
 ## Sample code
+
+The following sample code tries to show the combined use of many functions in **Euro**JSON**stat**. Since version 2.1, a similar goal can be attained with the use of a single function: *fetchEmptyDataset*.
 
 ```js
 //A query

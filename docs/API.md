@@ -26,7 +26,21 @@ Fetch functions are asynchronous functions that connect to Eurostat and retrieve
 
 ### fetchEmptyDataset
 
-Takes a query, a dataset code or a Eurostat API end point and returns a promise of a JSON-stat metadata-only dataset (default) or of a jsonstat metadata-only dataset instance (when the second argument is true). If the query has filters, they will be ignored.
+An empty dataset is a dataset that only contains metadata: it is identical to a regular dataset but with its "value" property empty. Metadata-only responses are useful to deal with datasets without the burden of the data. Unfortunately, Eurostat does not support metadata-only responses. *fetchEmptyDataset* tries to fill this void.
+
+*fetchEmptyDataset* takes a query or a dataset code and returns a promise of a JSON-stat metadata-only dataset object (default) 
+
+```js
+EuroJSONstat.fetchEmptyDataset("une_rt_a").then(js=>{
+  if(js.class==="error"){
+    console.log(`Error label: "${js.label}"`);
+  }else{
+    console.log(`Dataset label: "${js.label}"`);
+  }
+});
+```
+
+or of a jsonstat metadata-only dataset instance (when the second argument is true):
 
 ```js
 EuroJSONstat.fetchEmptyDataset(
@@ -44,9 +58,7 @@ EuroJSONstat.fetchEmptyDataset(
 });
 ```
 
-(If you use a dataset code as input, you won&rsquo;t be able to choose language or API version.)
-
-Take into account that when retrieving a jsonstat instance of very big datasets, the value property will be filled with as many nulls as expected values. When retrieving a JSON-stat object, the value property is an empty array.
+If you use a dataset code as input, you won&rsquo;t be able to choose language or API version. If you use a query and it has filters, they will be ignored. *fetchEmptyDataset* does not accept a Eurostat API end point as argument (an error will be returned with a 400 status code).
 
 ### fetchDataset
 
