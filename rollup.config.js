@@ -1,8 +1,10 @@
 import json from "@rollup/plugin-json";
-import {terser} from "rollup-plugin-terser";
+import terser from "@rollup/plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
 import babel from "@rollup/plugin-babel";
-import * as pkg from "./package.json";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const pkg = require("./package.json");
 
 const
   input="./src/index.js",

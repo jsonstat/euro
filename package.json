@@ -1,6 +1,7 @@
 {
 	"name": "jsonstat-euro",
-	"version": "2.1.1",
+	"version": "3.0.0",
+	"type": "module",
 	"description": "A library to deal with Eurostat's JSON-stat API",
 	"homepage": "https://jsonstat.com",
 	"keywords": [
@@ -29,17 +30,17 @@
 	"jsdelivr": "iife.js",
 	"scripts": {
 		"build": "rollup -c",
-		"test": "node test/nodejs.js"
+		"test": "node test/nodejs.cjs"
 	},
 	"dependencies": {
-		"jsonstat-toolkit": "^1.4.2"
+		"jsonstat-toolkit": "^2.2.0"
 	},
 	"devDependencies": {
-		"rollup": "^1.27.1",
-		"@rollup/plugin-json": "^4.0.0",
-		"@rollup/plugin-babel": "^5.3.0",
-		"@rollup/plugin-node-resolve": "^11.2.0",
-		"rollup-plugin-terser": "^5.1.2",
+		"rollup": "4.0.0",
+		"@rollup/plugin-json": "^6.1.0",
+		"@rollup/plugin-babel": "^6.1.0",
+		"@rollup/plugin-node-resolve": "^16.0.0",
+		"@rollup/plugin-terser": "^0.4.4",
 		"@babel/core": "^7.7.4",
 		"@babel/preset-env": "^7.7.4"
 	},
