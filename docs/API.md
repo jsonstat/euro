@@ -83,6 +83,8 @@ EuroJSONstat.fetchDataset(
 
 (If you use a dataset code as input, you won&rsquo;t be able to choose language or API version.)
 
+Full example: [GDP per Capita across EU Member States](https://jsonstat.com/examples/54a79252883ab2c5a1fb788e9d98c200).
+
 ### fetchQuery
 
 Takes a query or a dataset code and returns a promise of an explicit version of the original query. By default, only the last time period is retrieved: a second parameter (*false*) can be provided to retrieve all the time periods available.
@@ -359,3 +361,4 @@ EuroJSONstat.simpleQuery(
 ### setRole
 
 Takes a jsonstat dataset instance and adds role information to it. Generally, you won&rsquo;t need to use it: all jsonstat dataset instances returned by JSON-stat for Eurostat have already set role.
+
